@@ -27,7 +27,6 @@ export const FOOTER_GROUP = [
       "Santraller",
       "Jeneratör",
       "UPS",
-      "Otel Elektronik",
     ],
   },
 ];
@@ -35,23 +34,23 @@ export const FOOTER_GROUP = [
 const Footer = () => {
   return (
     <footer className="bg-neutral-900 text-white mt-12 lg:mt-20">
-      <div className="container mx-[5px] sm:mx-auto px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center gap-[24px]">
-        <div className="flex flex-col justify-center items-center text-center xl:flex-row xl:gap-16 w-full">
-          <div className="flex lg:flex-row flex-col lg:gap-20 w-1/3">
-            <div className=" w-auto h-auto py-[10px] lg:py-[20px]">
+      <div className="container mx-[5px] sm:mx-auto px-6 md:px-12 lg:px-18 flex flex-col items-center justify-center gap-[24px]">
+        <div className="flex flex-col justify-center items-center text-center xl:flex-row xl:gap-16 w-full py-4">
+          <div className="flex flex-col lg:gap-10 ">
+            <div className=" w-auto h-auto py-[10px] lg:py-[16px] mt-2">
               <text className="text-xl font-semibold text-center lg:text-2xl">
                 Sosyal Medya
               </text>
               <div className="border-[2px] flex border-white items-center justify-center gap-[16px] xl:gap-[24px] my-[6px] p-2 xl:px-8 rounded-2xl">
-                <Link href="/">
+                <a href="/">
                   <FaFacebook className="text-xl lg:text-3xl" />
-                </Link>
-                <Link href="/">
+                </a>
+                <a href="/">
                   <FaTwitter className="text-xl lg:text-3xl" />
-                </Link>
-                <Link href="/">
+                </a>
+                <a href="/">
                   <FaLinkedinIn className="text-xl lg:text-3xl" />
-                </Link>
+                </a>
               </div>
             </div>
             <div className="flex w-28 sm:w-32 lg:w-40 2xl:w-48">
@@ -65,15 +64,15 @@ const Footer = () => {
           </div>
 
           <div
-            className="flex flex-wrap gap-10 xl:gap-32 justify-center my-5
-                     text-white text-start text-sm lg:text-xl font-medium"
+            className="flex flex-wrap gap-10 xl:gap-16 justify-center my-5
+                     text-white text-start text-sm lg:text-xl xl:text-2xl font-medium"
           >
             {FOOTER_GROUP.map((columns) => (
               <FooterColumn title={columns.title} key={columns.links}>
-                <ul className=" flex flex-col gap-2 ">
+                <ul className=" flex flex-col gap-1 mt-[6px] lg:mt-[12px]">
                   {columns.links.map((link) => (
                     <Link
-                      className="hover:text-slate-500 text-xs font-light lg:text-base"
+                      className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
                       href="/"
                       key={link}
                     >

@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center text-center h-full w-auto mx-4 lg:mx-16 gap-5 lg:gap-10">
-        <h2 className="xl:text-3xl text-2xl text-black font-bold">
+      <div id="about" className="flex flex-col justify-center items-center text-center h-full w-auto mx-4 lg:mx-16 gap-5 lg:gap-10">
+        <h2 className="xl:text-4xl text-2xl text-black font-bold">
           Onpowergroup Hakkında
         </h2>
         <text className="text-xl xl:text-2xl font-semibold">
