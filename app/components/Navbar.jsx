@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className="flex fixed bg-neutral-900 z-30 w-full ">
       <div className="mx-auto min-w-full px-2 lg:px-8">
         {/* Desktop Navbar */}
-        <div className="relative hidden md:flex h-28 items-center justify-between xl:px-10 2xl:px-20 ">
+        <div className="relative hidden md:flex h-28 items-center justify-between xl:px-10 2xl:px-18">
           <div className="w-15 sm:w-20 md:w-28 lg:w-32 xl:w-48 2xl:w-60 h-auto">
             <Image
               src={navbarlogo}
@@ -31,7 +31,7 @@ const Navbar = () => {
               objectFit="contain"
             />
           </div>
-          <div className="flex gap-[18px] xl:gap-14 2xl:gap-24 w-1/2 justify-center items-end text-base xl:text-lg 2xl:text-xl text-slate-100">
+          <div className="flex gap-[18px] xl:gap-14 2xl:gap-20 w-1/2 justify-center items-end text-base xl:text-lg 2xl:text-xl text-slate-100">
             <Link href="/" className="text-white whitespace-nowrap rounded-md">
               Ana Sayfa
             </Link>
