@@ -3,7 +3,7 @@ import Products from "./components/Products";
 
 const page = () => {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col gap-16">
      <Products />
     </section>
   );

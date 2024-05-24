@@ -13,21 +13,34 @@ const Navbar = () => {
   const links = [
     { label: "projects", href: "/pages/projects" },
     { label: "products", href: "/pages/products" },
-    
+    { label: "certificate", href: "/pages/certificate" },
   ];
 
-  const [isOpen, setIsOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isCertificatesOpen, setIsCertificatesOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  const toggleProjects = () => {
+    setIsProjectsOpen(!isProjectsOpen);
+  };
+
+  const toggleProducts = () => {
+    setIsProductsOpen(!isProductsOpen);
+  };
+
+  const toggleCertificates = () => {
+    setIsCertificatesOpen(!isCertificatesOpen);
+  };
 
   return (
     <nav className="flex fixed bg-neutral-900 z-30 w-full ">
-      <div className="mx-auto min-w-full px-2 lg:px-8">
+      <div className="mx-auto min-w-full px-2 lg:px-6">
         {/* Desktop Navbar */}
-        <div className="relative hidden lg:flex h-28 items-center justify-between xl:px-10 2xl:px-18 mx-4">
+        <div className="relative hidden lg:flex h-28 items-center justify-between xl:px-2 2xl:px-8 mx-4">
           <div className="w-15 sm:w-20 md:w-28 lg:w-32 xl:w-48 2xl:w-60 h-auto">
             <Image
               src={navbarlogo}
@@ -36,12 +49,12 @@ const Navbar = () => {
               objectFit="contain"
             />
           </div>
-          <div className="flex gap-[18px] xl:gap-14 2xl:gap-20 w-1/2 justify-center items-end text-base xl:text-xl 2xl:text-2xl text-slate-100">
+          <div className="flex gap-[18px] xl:gap-10 2xl:gap-18 justify-center items-end text-base lg:text-lg xl:text-xl text-slate-100 mx-2">
             <Link href="/" className="text-white whitespace-nowrap rounded-md">
               Ana Sayfa
             </Link>
             <div className="relative group">
-              <button className="">Projelerimiz</button>
+              <button className="flex flex-row items-center">Projelerimiz <FaCaretDown className="ml-1" /></button>
               <div className="absolute pt-2 text-lg xl:w-48 w-30 bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/projects"
@@ -58,7 +71,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="relative group">
-              <button className="">Ürünlerimiz</button>
+              <button className="flex flex-row items-center">Ürünlerimiz <FaCaretDown className="ml-1" /></button>
               <div className="absolute pt-2 w-48 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/products"
@@ -75,10 +88,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="relative group">
-              <button className="">Sertifikalarımız</button>
+              <button className="flex flex-row items-center">Sertifikalarımız <FaCaretDown className="ml-1" /></button>
               <div className="absolute pt-2 w-48 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
-                  href="/"
+                  href="/pages/certificate"
                   className="block py-2 px-3 text-white hover:bg-slate-600"
                 >
                   Paris iklim anlaşması
@@ -88,8 +101,22 @@ const Navbar = () => {
             <Link href="/#about">Hakkımızda</Link>
             <Link href="/#contact">İletişim</Link>
           </div>
-          <div className="text-center text-slate-100 xl:text-lg text-base ">
-            Dil
+          <div className="relative group justify-center items-center text-center">
+            <button className="flex items-center text-white text-base xl:text-lg px-2 w-5 xl:w-16">DİL <FaCaretDown className="ml-1" /></button>
+            <div className="absolute pt-2 w-5 xl:w-16 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
+              <Link
+                href="/"
+                className="block py-2 px-2 text-white hover:bg-slate-600"
+              >
+                EN
+              </Link>
+              <Link
+                href="/"
+                className="block py-2 px-2 text-white hover:bg-slate-600"
+              >
+                TR
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -108,8 +135,7 @@ const Navbar = () => {
         <div
           className={`fixed top-0 right-0 w-3/4 sm:w-1/2 h-full bg-neutral-900 z-40 transition-transform duration-500 transform ${
             isSidebarOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
+          }`}>
           <div className="flex justify-start p-4">
             <button
               onClick={toggleSidebar}
@@ -127,7 +153,7 @@ const Navbar = () => {
               Ana Sayfa
             </Link>
             <div className="relative group mt-4 w-full text-left">
-              <button className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
+              <button onClick={toggleProjects} className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
                 Projelerimiz <FaCaretDown className="ml-1" />
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
@@ -148,7 +174,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="relative group mt-4 w-full text-left">
-              <button className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
+              <button onClick={toggleProducts} className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
                 Ürünlerimiz <FaCaretDown className="ml-1" />
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
@@ -169,12 +195,12 @@ const Navbar = () => {
               </div>
             </div>
             <div className="relative group mt-4 w-full text-left">
-              <button className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
+              <button onClick={toggleCertificates} className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
                 Sertifikalarımız <FaCaretDown className="ml-1" />
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
-                  href="/"
+                  href="/pages/certificate"
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >

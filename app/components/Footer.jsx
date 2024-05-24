@@ -38,11 +38,13 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center text-center xl:flex-row xl:gap-16 w-full py-4">
           <div className="flex flex-col lg:gap-10 ">
             <div className=" w-auto h-auto py-[10px] lg:py-[16px] mt-2">
-              <text className="text-xl font-semibold text-center lg:text-2xl">
+              <text className="text-xl font-semibold text-center lg:text-xl">
                 Sosyal Medya
               </text>
               <div className="border-[2px] flex border-white items-center justify-center gap-[16px] xl:gap-[24px] my-[6px] p-2 xl:px-8 rounded-2xl">
-                <a href="/">
+                <a href="https://www.facebook.com/onpowerenergygroup/?paipv=0&eav=Afbes-NEWurLRzpnK_jf-6Pg6do7stCKJudaK7LLgn4BzkCYiErw6ygb-M8VGs_CnEc&_rdr"
+                rel="norefferer nofollower"
+                target="_blank">
                   <FaFacebook className="text-xl lg:text-3xl" />
                 </a>
                 <a href="/">
@@ -65,7 +67,7 @@ const Footer = () => {
 
           <div
             className="flex flex-wrap gap-10 xl:gap-16 justify-center my-5
-                     text-white text-start text-sm lg:text-xl xl:text-2xl font-medium"
+                     text-white text-start text-sm lg:text-xl font-medium"
           >
             {FOOTER_GROUP.map((columns) => (
               <FooterColumn title={columns.title} key={columns.links}>

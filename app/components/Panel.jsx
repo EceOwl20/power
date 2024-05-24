@@ -17,7 +17,7 @@ const Panel = () => {
             SÜRDÜREBİLİR GARANTİLİ GES PROJELERİNDE BİZ VARIZ
           </text>
         </div>
-        <button className=" bg-amber-400 rounded-full px-6 py-3 lg:px-8  text-sm z-10 lg:text-base">
+        <button id="about" className=" bg-amber-400 rounded-full px-6 py-3 lg:px-8  text-sm z-10 lg:text-base">
           Daha fazlası
         </button>
       </div>

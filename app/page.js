@@ -5,7 +5,7 @@ import Station from "./components/Station";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-12">
       home
       <Panel/>
       <About />
