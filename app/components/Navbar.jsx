@@ -13,6 +13,7 @@ const Navbar = () => {
   const links = [
     { label: "projects", href: "/pages/projects" },
     { label: "products", href: "/pages/products" },
+    
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -43,13 +44,13 @@ const Navbar = () => {
               <button className="">Projelerimiz</button>
               <div className="absolute pt-2 text-lg xl:w-48 w-30 bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
-                  href="/"
+                  href="/pages/projects"
                   className="block py-3  px-4 text-white hover:bg-slate-600"
                 >
                   Otel otomasyon sistemleri
                 </Link>
                 <Link
-                  href="/"
+                  href="/pages/projects"
                   className="block py-3 px-4 text-white no-underline hover:bg-slate-600"
                 >
                   Güneş Enerji Santralleri
@@ -66,7 +67,7 @@ const Navbar = () => {
                   Jeneratörler
                 </Link>
                 <Link
-                  href="/"
+                  href="/pages/products"
                   className="block py-3 px-4 text-white no-underline hover:bg-slate-600"
                 >
                   Ups Kesintisiz Güç Kaynakları
@@ -84,7 +85,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <Link href="#about">Hakkımızda</Link>
+            <Link href="/#about">Hakkımızda</Link>
             <Link href="/#contact">İletişim</Link>
           </div>
           <div className="text-center text-slate-100 xl:text-lg text-base ">
@@ -131,14 +132,14 @@ const Navbar = () => {
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
-                  href="/"
+                  href="/pages/projects"
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
                   Otel otomasyon sistemleri
                 </Link>
                 <Link
-                  href="/"
+                  href="/pages/projects"
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
@@ -159,7 +160,7 @@ const Navbar = () => {
                   Jeneratörler
                 </Link>
                 <Link
-                  href="/"
+                  href="/pages/products"
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
@@ -182,7 +183,7 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              href="#about"
+              href="/#about"
               onClick={toggleSidebar}
               className="text-white px-3 py-2 rounded-md text-lg mt-4"
             >
@@ -190,7 +191,7 @@ const Navbar = () => {
             </Link>
 
             <a
-              href="#contact"
+              href="/#contact"
               onClick={toggleSidebar}
               className="text-white px-3 py-2 rounded-md text-lg mt-4"
             >
