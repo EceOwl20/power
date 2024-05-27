@@ -1,11 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, createContext, useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import navbarlogo from "@/public/assets/images/logo.png";
 import { FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
 import { usePathname } from "next/navigation";
+import Cookies from "js-cookie";
+import LangSwitcher from "../../../LangSwitcher";
+import { useTranslations } from "next-intl";
+
+const LanguageContext = createContext();
+export const useLanguage = () => useContext(LanguageContext);
 
 const Navbar = () => {
   const currentPath = usePathname();
@@ -20,6 +26,13 @@ const Navbar = () => {
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isCertificatesOpen, setIsCertificatesOpen] = useState(false);
+
+  const [language, setLanguage] = useState(Cookies.get("language") || "EN");
+  useEffect(() => {
+    Cookies.set("language", language);
+  }, [language]);
+
+  const translation = useTranslations("Navbar");
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -51,72 +64,64 @@ const Navbar = () => {
           </div>
           <div className="flex gap-[18px] xl:gap-10 2xl:gap-18 justify-center items-end text-base lg:text-lg xl:text-xl text-slate-100 mx-2">
             <Link href="/" className="text-white whitespace-nowrap rounded-md">
-              Ana Sayfa
+            {translation('homepage')}
             </Link>
             <div className="relative group">
-              <button className="flex flex-row items-center">Projelerimiz <FaCaretDown className="ml-1" /></button>
+              <button className="flex flex-row items-center">
+              {translation('projects')} <FaCaretDown className="ml-1" />
+              </button>
               <div className="absolute pt-2 text-lg xl:w-48 w-30 bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/projects"
                   className="block py-3  px-4 text-white hover:bg-slate-600"
                 >
-                  Otel otomasyon sistemleri
+                   {translation('automation')}
                 </Link>
                 <Link
                   href="/pages/projects"
                   className="block py-3 px-4 text-white no-underline hover:bg-slate-600"
                 >
-                  Güneş Enerji Santralleri
+                   {translation('solar')}
                 </Link>
               </div>
             </div>
             <div className="relative group">
-              <button className="flex flex-row items-center">Ürünlerimiz <FaCaretDown className="ml-1" /></button>
+              <button className="flex flex-row items-center">
+              {translation('products')} <FaCaretDown className="ml-1" />
+              </button>
               <div className="absolute pt-2 w-48 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/products"
                   className="block py-5 px-4 text-white hover:bg-slate-600"
                 >
-                  Jeneratörler
+                   {translation('generators')}
                 </Link>
                 <Link
                   href="/pages/products"
                   className="block py-3 px-4 text-white no-underline hover:bg-slate-600"
                 >
-                  Ups Kesintisiz Güç Kaynakları
+                   {translation('ups')}
                 </Link>
               </div>
             </div>
             <div className="relative group">
-              <button className="flex flex-row items-center">Sertifikalarımız <FaCaretDown className="ml-1" /></button>
+              <button className="flex flex-row items-center">
+              {translation('certificate')} <FaCaretDown className="ml-1" />
+              </button>
               <div className="absolute pt-2 w-48 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/certificate"
                   className="block py-2 px-3 text-white hover:bg-slate-600"
                 >
-                  Paris iklim anlaşması
+                   {translation('deal')}
                 </Link>
               </div>
             </div>
-            <Link href="/#about">Hakkımızda</Link>
-            <Link href="/#contact">İletişim</Link>
+            <Link href="/#about"> {translation('about')}</Link>
+            <Link href="/#contact"> {translation('contact')}</Link>
           </div>
-          <div className="relative group justify-center items-center text-center">
-            <button className="flex items-center text-white text-base xl:text-lg px-2 w-5 xl:w-16">DİL <FaCaretDown className="ml-1" /></button>
-            <div className="absolute pt-2 w-5 xl:w-16 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
-              <Link
-                href="/"
-                className="block py-2 px-2 text-white hover:bg-slate-600"
-              >
-                EN
-              </Link>
-              <Link
-                href="/"
-                className="block py-2 px-2 text-white hover:bg-slate-600"
-              >
-                TR
-              </Link>
-            </div>
+          <div className=" justify-center items-center text-center">
+            <LangSwitcher />
           </div>
         </div>
 
@@ -135,7 +140,8 @@ const Navbar = () => {
         <div
           className={`fixed top-0 right-0 w-3/4 sm:w-1/2 h-full bg-neutral-900 z-40 transition-transform duration-500 transform ${
             isSidebarOpen ? "translate-x-0" : "translate-x-full"
-          }`}>
+          }`}
+        >
           <div className="flex justify-start p-4">
             <button
               onClick={toggleSidebar}
@@ -150,11 +156,14 @@ const Navbar = () => {
               onClick={toggleSidebar}
               className="text-white px-3 py-2 rounded-md text-lg"
             >
-              Ana Sayfa
+              {translation('homepage')}
             </Link>
             <div className="relative group mt-4 w-full text-left">
-              <button onClick={toggleProjects} className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
-                Projelerimiz <FaCaretDown className="ml-1" />
+              <button
+                onClick={toggleProjects}
+                className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full"
+              >
+               {translation('projects')} <FaCaretDown className="ml-1" />
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
@@ -162,20 +171,23 @@ const Navbar = () => {
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
-                  Otel otomasyon sistemleri
+                  {translation('automation')}
                 </Link>
                 <Link
                   href="/pages/projects"
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
-                  Güneş Enerji Santralleri
+                  {translation('solar')}
                 </Link>
               </div>
             </div>
             <div className="relative group mt-4 w-full text-left">
-              <button onClick={toggleProducts} className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
-                Ürünlerimiz <FaCaretDown className="ml-1" />
+              <button
+                onClick={toggleProducts}
+                className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full"
+              >
+                {translation('products')} <FaCaretDown className="ml-1" />
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
@@ -183,20 +195,23 @@ const Navbar = () => {
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
-                  Jeneratörler
+                  {translation('generators')}
                 </Link>
                 <Link
                   href="/pages/products"
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
-                  Ups Kesintisiz Güç Kaynakları
+                  {translation('ups')}
                 </Link>
               </div>
             </div>
             <div className="relative group mt-4 w-full text-left">
-              <button onClick={toggleCertificates} className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full">
-                Sertifikalarımız <FaCaretDown className="ml-1" />
+              <button
+                onClick={toggleCertificates}
+                className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full"
+              >
+                {translation('certificate')} <FaCaretDown className="ml-1" />
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
@@ -204,7 +219,7 @@ const Navbar = () => {
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
-                  Paris iklim anlaşması
+                  {translation('deal')}
                 </Link>
               </div>
             </div>
@@ -213,7 +228,7 @@ const Navbar = () => {
               onClick={toggleSidebar}
               className="text-white px-3 py-2 rounded-md text-lg mt-4"
             >
-              Hakkımızda
+              {translation('about')}
             </Link>
 
             <a
@@ -221,8 +236,11 @@ const Navbar = () => {
               onClick={toggleSidebar}
               className="text-white px-3 py-2 rounded-md text-lg mt-4"
             >
-              İletişim
+              {translation('contact')}
             </a>
+            <div className=" justify-center items-center text-center">
+            <LangSwitcher />
+          </div>
           </div>
         </div>
       </div>

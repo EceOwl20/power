@@ -1,0 +1,21 @@
+{   "LocaleSwitcher": {
+    "label": "Dili Değiştir",
+    "locale": "{locale, select, en {EN} tr {TR} other {Bilinmeyen}}"
+    
+   
+  },
+  
+    "Navbar":{
+      "homepage":"Ana Sayfa",
+      "projects":"Projelerimiz",
+      "automation":"Otel otomasyon sistemleri",
+      "solar":"Güneş Enerji Santralleri",
+      "products":"Ürünlerimiz",
+      "generators":"Jeneratörler",
+      "ups":"Ups Kesintisiz Güç Kaynakları",
+      "certificate":"Sertifikalarımız",
+      "deal":"Paris İklim Anlaşması",
+      "about":"Hakkımızda",
+      "contact":"İletişim"
+    }
+  }

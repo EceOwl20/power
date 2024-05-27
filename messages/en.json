@@ -1,0 +1,20 @@
+{  
+  "LocaleSwitcher": {
+  "label": "Change language",
+  "locale": "{locale, select, de {DE} en {EN} tr {TR} ru {RU} other {Unknown}}"
+},
+
+"Navbar":{
+  "homepage":"Homepage",
+  "projects":"Projects",
+  "automation":"Hotel automation systems",
+  "solar":"Solar Power Plants",
+  "products":"Products",
+  "generators":"Generators",
+  "ups":"Ups Uninterruptible Power Supplies",
+  "certificate":"Certificate",
+  "deal":"Paris Climate Deal",
+  "about":"About",
+  "contact":"Contact"
+}
+}

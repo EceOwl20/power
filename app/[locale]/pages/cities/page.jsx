@@ -6,7 +6,7 @@ const page = () => {
    <div className="flex flex-col gap-16">
      <div className="flex flex-col gap-4 md:gap-8 items-center justify-center">
       <div
-        className="relative mt-32 h-[400px] w-[550px] bg-cover bg-center justify-center items-center "
+        className="relative mt-32 h-[200px] w-[300px] lg:h-[300px] lg:w-[400px] xl:h-[400px] xl:w-[550px] bg-cover bg-center justify-center items-center "
         style={{ backgroundImage: `url(${aydinImage.src})` }}
       >
         <div className="bg-black/50 absolute inset-0 z-[1]"></div>
@@ -16,7 +16,7 @@ const page = () => {
           </text>
         </div>
       </div>
-      <div className='flex flex-col items-center justify-center mx-56 gap-3 text-center'>
+      <div className='flex flex-col items-center justify-center mx-10 md:mx-16 lg:mx-20 xl:mx-56 gap-3 text-center'>
         <text className='text-lg lg:text-xl font-semibold'>Güneş Enerjisi Sistemleri</text>
         <div className='flex w-full h-[1px] bg-slate-200'></div>
         <p className='text-sm lg:text-base '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
