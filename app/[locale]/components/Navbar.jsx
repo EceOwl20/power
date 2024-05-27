@@ -6,12 +6,8 @@ import navbarlogo from "@/public/assets/images/logo.png";
 import { FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
 import { usePathname } from "next/navigation";
-import Cookies from "js-cookie";
 import LangSwitcher from "../../../LangSwitcher";
 import { useTranslations } from "next-intl";
-
-const LanguageContext = createContext();
-export const useLanguage = () => useContext(LanguageContext);
 
 const Navbar = () => {
   const currentPath = usePathname();
@@ -26,11 +22,6 @@ const Navbar = () => {
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isCertificatesOpen, setIsCertificatesOpen] = useState(false);
-
-  const [language, setLanguage] = useState(Cookies.get("language") || "EN");
-  useEffect(() => {
-    Cookies.set("language", language);
-  }, [language]);
 
   const translation = useTranslations("Navbar");
 
@@ -120,7 +111,7 @@ const Navbar = () => {
             <Link href="/#about"> {translation('about')}</Link>
             <Link href="/#contact"> {translation('contact')}</Link>
           </div>
-          <div className=" justify-center items-center text-center">
+          <div className=" justify-center items-center text-center cursor-pointer">
             <LangSwitcher />
           </div>
         </div>
@@ -238,7 +229,7 @@ const Navbar = () => {
             >
               {translation('contact')}
             </a>
-            <div className=" justify-center items-center text-center">
+            <div className="justify-center items-center text-center cursor-pointer">
             <LangSwitcher />
           </div>
           </div>

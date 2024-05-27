@@ -17,5 +17,74 @@
       "deal":"Paris İklim Anlaşması",
       "about":"Hakkımızda",
       "contact":"İletişim"
+    },
+
+    "Panel":{
+      "text":"2015 yılından bugüne kadar 160 MWp GES tecrübesi ile anahtar teslimi projeler yapıyoruz.",
+      "header":"SÜRDÜRÜLEBİLİR GARANTİLİ GES PROJELERİNDE BİZ VARIZ",
+      "button":"Daha fazlası..."
+    },
+
+    "Footer":{
+      "social":"Sosyal Medya",
+      "contact":"İletişim",
+      "address":"On Power Group Kızıltoprak Mah. 921. Sokak Kızılıtoprak Apt No:11/B Muratpaşa/Antalya",
+      "title": "KURUMSAL",
+      "about":"Hakkımızda",
+      "onpower":"OnpowerGroup",
+      "kvkk":"KVKK",
+      "blog":"Blog",
+      "title2": "HİZMETLERİMİZ",
+      "automation":"Otel Otomasyon",
+      "mechanic":"Otel Mekanik",
+      "electric":"Otel Elektrik",
+      "electronic":"Otel Elektronik",
+      "title3": "ÜRÜNLERİMİZ",
+      "solar":"Güneş Enerji",
+      "stations":"Santraller",
+      "generators":"Jeneratör",
+      "ups":"UPS"
+    },
+
+    "About":{
+      "header":"Onpowergroup Hakkında",
+      "title":"En iyi Kalitede 25 Yıllık Üretim Mükemmelliği",
+      "text":"2015 yılından bugüne 160 Mw GES kurulumu tecrübesi, Yatırm Danışmanlığı ve Teşvik Danışmanlığı konularında 30 yıllık tecrübe birlikteliğinden oluşmuş bir gruptur. Güçlü kadrosu, yüksek bilgi ve teknoloji kullanarak yaptığı projelerin sürdürebilir olmasını garanti eder.",
+      "button":"Daha fazlası..."
+    
+    },
+    
+    "Station":{
+      "header":"GÜNEŞ ENERJİ SANTRALLERİ"
+    },
+
+    "Contact":{
+      "header":"Bize Ulaşın",
+      "phone":"+90 242 322 60 00",
+      "button":"Hemen Teklif Al"
+    },
+
+    "City":{
+      "solar":"Güneş Enerjisi Sistemleri",
+      "button":"Daha fazlası..."
+    },
+    "Project":{
+      "header":"Projelerimiz",
+      "automation":"Otel Otomasyon Sistemleri",
+      "hotelText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "solar":"Güneş Enerji Santralleri",
+      "solarText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+    },
+    "Product":{
+      "header":"Ürünlerimiz",
+      "generators":"Jeneratörler",
+      "generatorsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "ups":"Ups Kesintisiz Güç Kaynakları",
+      "upsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    "Certificate":{
+      "header":"Sertifikalarımız",
+      "text1":"Nuvo",
+      "text2":"Sercons"
     }
   }

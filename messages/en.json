@@ -16,5 +16,70 @@
   "deal":"Paris Climate Deal",
   "about":"About",
   "contact":"Contact"
+},
+
+"Panel":{
+  "text":"Since 2015, we have been involved in turnkey projects and have accumulated 160 MWp Solar Power Plant installation experience.",
+  "header":"WE ARE PRESENT IN SUSTAINABLE GUARANTEED SPP PROJECTS",
+  "button":"More..."
+},
+"Footer":{
+  "social":"Social Media",
+  "contact":"Contact",
+  "address":"On Power Group Kızıltoprak Mah. 921. Sokak Kızılıtoprak Apt No:11/B Muratpaşa/Antalya",
+  "title": "INSTITUTIONAL",
+  "about":"About",
+  "onpower":"OnpowerGroup",
+  "kvkk":"KVKK",
+  "blog":"Blog",
+  "title2": "SERVICES",
+  "automation": "Hotel Automation",
+  "mechanic":"Hotel Mechanic",
+  "electric":"Hotel Electric",
+  "electronic":"Hotel Electronics",
+  "title3": "PRODUCTS",
+  "solar":"Solar Energy",
+  "stations":"Power Plants",
+  "generators":"Generator",
+  "ups":"UPS"
+},
+
+"About":{
+  "header":"About Onpowergroup",
+  "title":"25 Years of Manufacturing Excellence in Best Quality.",
+  "text":"It is a group formed with 30 years of experience in 160 Mw SPP installation experience, Investment Consultancy, and Incentive Consultancy since 2015. It guarantees the sustainability of its projects using its strong staff, high knowledge, and technology.",
+  "button":"More..."
+},
+"Station":{
+  "header":"SOLAR POWER PLANTS"
+},
+"Contact":{
+  "header":"Contact Us",
+  "phone":"+90 242 322 60 00",
+  "button":"Get an Offer Now"
+},
+
+"City":{
+  "solar":"Solar Energy Systems",
+  "button":"More..."
+},
+"Project":{
+  "header":"Projects",
+  "automation":"Hotel automation systems",
+  "hotelText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+  "solar":"Solar Power Plants",
+  "solarText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+},
+"Product":{
+  "header":"Products",
+  "generators":"Generators",
+  "generatorsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  "ups":"Ups Uninterruptible Power Supplies",
+  "upsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+},
+"Certificate":{
+  "header":"Certificates",
+  "text1":"Nuvo",
+  "text2":"Sercons"
 }
 }
