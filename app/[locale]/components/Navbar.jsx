@@ -41,11 +41,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex fixed bg-neutral-900 z-30 w-full ">
-      <div className="mx-auto min-w-full px-2 lg:px-6">
+    <nav className="flex fixed bg-transparent z-30 w-full text-white ">
+      <div className="bg-black/20 absolute inset-0 z-[1]"></div>
+      <div className="mx-auto min-w-full px-2 lg:px-6 z-10">
         {/* Desktop Navbar */}
-        <div className="relative hidden lg:flex h-28 items-center justify-between xl:px-2 2xl:px-8 mx-4">
-          <div className="w-15 sm:w-20 md:w-28 lg:w-32 xl:w-48 2xl:w-60 h-auto">
+        <div className="relative hidden lg:flex h-28 items-center justify-between xl:px-2 2xl:px-8 mx-4 text-black">
+          <div className="w-15 sm:w-20 md:w-28 lg:w-36 xl:w-48 2xl:w-60 h-auto">
             <Image
               src={navbarlogo}
               alt="logo"
@@ -53,8 +54,8 @@ const Navbar = () => {
               objectFit="contain"
             />
           </div>
-          <div className="flex gap-[18px] xl:gap-10 2xl:gap-18 justify-center items-end text-base lg:text-lg xl:text-xl text-slate-100 mx-2">
-            <Link href="/" className="text-white whitespace-nowrap rounded-md">
+          <div className="flex gap-[18px] xl:gap-10 2xl:gap-18 justify-center items-end text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold text-white mx-2 z-99">
+            <Link href="/" className=" whitespace-nowrap rounded-md">
             {translation('homepage')}
             </Link>
             <div className="relative group">
@@ -64,13 +65,13 @@ const Navbar = () => {
               <div className="absolute pt-2 text-lg xl:w-48 w-30 bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/projects"
-                  className="block py-3  px-4 text-white hover:bg-slate-600"
+                  className="block py-3  px-4  hover:bg-slate-600"
                 >
                    {translation('automation')}
                 </Link>
                 <Link
                   href="/pages/projects"
-                  className="block py-3 px-4 text-white no-underline hover:bg-slate-600"
+                  className="block py-3 px-4  no-underline hover:bg-slate-600"
                 >
                    {translation('solar')}
                 </Link>
@@ -83,13 +84,13 @@ const Navbar = () => {
               <div className="absolute pt-2 w-48 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/products"
-                  className="block py-5 px-4 text-white hover:bg-slate-600"
+                  className="block py-5 px-4  hover:bg-slate-600"
                 >
                    {translation('generators')}
                 </Link>
                 <Link
                   href="/pages/products"
-                  className="block py-3 px-4 text-white no-underline hover:bg-slate-600"
+                  className="block py-3 px-4  no-underline hover:bg-slate-600"
                 >
                    {translation('ups')}
                 </Link>
@@ -102,7 +103,7 @@ const Navbar = () => {
               <div className="absolute pt-2 w-48 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/certificate"
-                  className="block py-2 px-3 text-white hover:bg-slate-600"
+                  className="block py-2 px-3 hover:bg-slate-600"
                 >
                    {translation('deal')}
                 </Link>
@@ -111,17 +112,17 @@ const Navbar = () => {
             <Link href="/#about"> {translation('about')}</Link>
             <Link href="/#contact"> {translation('contact')}</Link>
           </div>
-          <div className=" justify-center items-center text-center cursor-pointer">
+          <div className=" justify-center items-center text-black text-center cursor-pointer">
             <LangSwitcher />
           </div>
         </div>
 
         {/* Mobile Hamburger Menu Button */}
-        <div className="lg:hidden flex justify-between items-center px-6 h-28">
+        <div className="lg:hidden flex justify-between items-center text-white px-6 h-28">
           <Image src={navbarlogo} width={200} height={200} alt="logo" />
           <button
             onClick={toggleSidebar}
-            className="text-white focus:outline-none"
+            className="focus:outline-none"
           >
             {isSidebarOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
@@ -136,7 +137,7 @@ const Navbar = () => {
           <div className="flex justify-start p-4">
             <button
               onClick={toggleSidebar}
-              className="text-white focus:outline-none"
+              className="focus:outline-none"
             >
               <RxCrossCircled className="w-7 h-7" />
             </button>
@@ -145,14 +146,14 @@ const Navbar = () => {
             <Link
               href="/"
               onClick={toggleSidebar}
-              className="text-white px-3 py-2 rounded-md text-lg"
+              className=" px-3 py-2 rounded-md text-lg"
             >
               {translation('homepage')}
             </Link>
             <div className="relative group mt-4 w-full text-left">
               <button
                 onClick={toggleProjects}
-                className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full"
+                className=" px-3 py-2 rounded-md text-lg flex items-center justify-between w-full"
               >
                {translation('projects')} <FaCaretDown className="ml-1" />
               </button>
@@ -176,7 +177,7 @@ const Navbar = () => {
             <div className="relative group mt-4 w-full text-left">
               <button
                 onClick={toggleProducts}
-                className="text-white px-3 py-2 rounded-md text-lg flex items-center justify-between w-full"
+                className=" px-3 py-2 rounded-md text-lg flex items-center justify-between w-full"
               >
                 {translation('products')} <FaCaretDown className="ml-1" />
               </button>
@@ -217,7 +218,7 @@ const Navbar = () => {
             <Link
               href="/#about"
               onClick={toggleSidebar}
-              className="text-white px-3 py-2 rounded-md text-lg mt-4"
+              className=" px-3 py-2 rounded-md text-lg mt-4"
             >
               {translation('about')}
             </Link>
@@ -225,11 +226,11 @@ const Navbar = () => {
             <a
               href="/#contact"
               onClick={toggleSidebar}
-              className="text-white px-3 py-2 rounded-md text-lg mt-4"
+              className=" px-3 py-2 rounded-md text-lg mt-4"
             >
               {translation('contact')}
             </a>
-            <div className="justify-center items-center text-center cursor-pointer">
+            <div className="justify-center items-center text-black text-center cursor-pointer">
             <LangSwitcher />
           </div>
           </div>

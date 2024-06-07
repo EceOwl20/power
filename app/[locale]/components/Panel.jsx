@@ -8,7 +8,7 @@ const Panel = () => {
 
   return (
     <div
-      className="relative mt-[24px] h-96 bg-cover bg-center w-full"
+      className="relative  h-96 bg-cover bg-center w-full" //mt-24px
       style={{ backgroundImage: `url(${panelImage.src})` }}
     >
       <div className="bg-black/30 absolute inset-0 z-[1]"></div>
