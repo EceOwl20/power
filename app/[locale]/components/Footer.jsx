@@ -54,7 +54,7 @@ const Footer = () => {
               <ul className=" flex flex-col gap-1 mt-[6px] lg:mt-[12px]">
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
+                  href="/#about"
                 >
                   {translation("about")}
                 </Link>
@@ -72,7 +72,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
+                  href="/#contact"
                 >
                   {translation("contact")}
                 </Link>
@@ -124,25 +124,25 @@ const Footer = () => {
               <ul className=" flex flex-col gap-1 mt-[6px] lg:mt-[12px]">
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
+                  href="/pages/projects"
                 >
                   {translation("solar")}
                 </Link>
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
+                  href="/pages/projects"
                 >
                   {translation("stations")}
                 </Link>
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
+                  href="/pages/products"
                 >
                   {translation("generators")}
                 </Link>
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
+                  href="/pages/products"
                 >
                   {translation("ups")}
                 </Link>

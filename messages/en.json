@@ -61,7 +61,17 @@
 
 "City":{
   "solar":"Solar Energy Systems",
-  "button":"More..."
+  "button":"More...",
+  "Afyon":"Afyon ",
+  "antalya":"Antalya",
+  "aydin":"Aydın",
+  "eskisehir":"Eskişehir",
+  "isparta":"Isparta",
+  "konya":"Konya",
+  "mugla":"Muğla",
+  "kutahya":"Kütahya",
+  "nigde":"Niğde"
+  
 },
 "Project":{
   "header":"Projects",

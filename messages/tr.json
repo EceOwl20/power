@@ -66,8 +66,18 @@
 
     "City":{
       "solar":"Güneş Enerjisi Sistemleri",
-      "button":"Daha fazlası..."
+      "button":"Daha fazlası...",
+      "Afyon":"Afyon  text text text text text text text text text text text text text text text text",
+      "Antalya":"Antalya text text text text text text text text text text text texttext text text text",
+      "Aydın":"Aydın text text text text text text text texttext text text text",
+      "Eskişehir":"Eskişehir text text text texttext text text texttext text text text",
+      "Isparta":"Isparta text text text texttext text text texttext text text text",
+      "Konya":"Konya text text text texttext text text texttext text text text",
+      "Muğla":"Muğla text text text texttext text text texttext text text text",
+      "Kütahya":"Kütahya text text text texttext text text texttext text text text",
+      "Niğde":"Niğde text text text texttext text text texttext text text text"
     },
+
     "Project":{
       "header":"Projelerimiz",
       "automation":"Otel Otomasyon Sistemleri",
