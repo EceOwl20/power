@@ -62,16 +62,16 @@ const Navbar = () => {
               <button className="flex flex-row items-center">
               {translation('projects')} <FaCaretDown className="ml-1" />
               </button>
-              <div className="absolute pt-2 text-lg xl:w-48 w-30 bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
+              <div className="absolute pt-2 text-lg xl:w-48 w-30 bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/projects"
-                  className="block py-3  px-4  hover:bg-slate-600"
+                  className="block py-3  px-4  hover:bg-black/40"
                 >
                    {translation('automation')}
                 </Link>
                 <Link
                   href="/pages/projects"
-                  className="block py-3 px-4  no-underline hover:bg-slate-600"
+                  className="block py-3 px-4  no-underline hover:bg-black/40"
                 >
                    {translation('solar')}
                 </Link>
@@ -81,16 +81,16 @@ const Navbar = () => {
               <button className="flex flex-row items-center">
               {translation('products')} <FaCaretDown className="ml-1" />
               </button>
-              <div className="absolute pt-2 w-48 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
+              <div className="absolute pt-2 w-48 text-lg bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/products"
-                  className="block py-5 px-4  hover:bg-slate-600"
+                  className="block py-5 px-4  hover:bg-black/40"
                 >
                    {translation('generators')}
                 </Link>
                 <Link
                   href="/pages/products"
-                  className="block py-3 px-4  no-underline hover:bg-slate-600"
+                  className="block py-3 px-4  no-underline hover:bg-black/40"
                 >
                    {translation('ups')}
                 </Link>
@@ -100,10 +100,10 @@ const Navbar = () => {
               <button className="flex flex-row items-center">
               {translation('certificate')} <FaCaretDown className="ml-1" />
               </button>
-              <div className="absolute pt-2 w-48 text-lg bg-neutral-900 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
+              <div className="absolute pt-2 w-48 text-lg bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
                   href="/pages/certificate"
-                  className="block py-2 px-3 hover:bg-slate-600"
+                  className="block py-2 px-3 hover:bg-black/40"
                 >
                    {translation('deal')}
                 </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
             <Link href="/#about"> {translation('about')}</Link>
             <Link href="/#contact"> {translation('contact')}</Link>
           </div>
-          <div className=" justify-center items-center text-black text-center cursor-pointer">
+          <div className=" justify-center items-center text-black text-center cursor-pointer ">
             <LangSwitcher />
           </div>
         </div>

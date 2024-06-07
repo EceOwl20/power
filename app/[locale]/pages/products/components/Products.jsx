@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 const Products = () => {
   const t=useTranslations("Product");
   return (
-    <div className="flex flex-col mt-[180px] bg-cover bg-center w-auto items-center lg:items-start text-slate-900 justify-center mx-4 lg:mx-32 gap-4">
+    <div className="flex flex-col mt-[180px] bg-cover bg-center w-auto items-center lg:items-center text-slate-900 justify-center mx-4 lg:mx-32 gap-4">
       <div className="flex h-auto w-full text-start mb-5 lg:mb-10">
         <h1 className="text-4xl font-bold">{t("header")}</h1>
       </div>

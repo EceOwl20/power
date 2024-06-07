@@ -8,14 +8,14 @@ const Panel = () => {
 
   return (
     <div
-      className="relative  h-96 bg-cover bg-center w-full" //mt-24px
+      className="relative h-[550px] md:[400px] lg:h-[550px] xl:h-[550px] 2xl:h-[650px] bg-cover bg-center w-full" //mt-24px h-[600px] md:[700px] lg:h-[800px] xl:h-[880px] 2xl:h-[940px]
       style={{ backgroundImage: `url(${panelImage.src})` }}
     >
       <div className="bg-black/30 absolute inset-0 z-[1]"></div>
       <div className="flex flex-col justify-center items-center w-auto h-full mt-10 mx-4 gap-12 text-white z-10">
         <div className="text-center z-10">
-          <p className="text-xs lg:text-base mb-3">{translation("text")}</p>
-          <text className="text-lg lg:text-2xl font-semibold">
+          <p className="text-xs lg:text-base 2xl:text-lg mb-3">{translation("text")}</p>
+          <text className="text-lg lg:text-2xl 2xl:text-3xl font-semibold">
             {translation("header")}
           </text>
         </div>

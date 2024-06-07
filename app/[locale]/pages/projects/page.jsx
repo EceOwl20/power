@@ -1,10 +1,12 @@
 import React from "react";
-import Projects from "./components/Projects";
+import Projects2 from "./components/ProjectsSolar";
+import Projects3 from "./components/ProjectsHotel";
 
 const page = () => {
   return (
-    <div className="flex flex-col gap-16">
-      <Projects />
+    <div className="flex flex-col gap-[100px]">
+      <Projects2 />
+      <Projects3 />
     </div>
   );
 };
