@@ -11,7 +11,6 @@ import { useTranslations } from "next-intl";
 
 const Navbar = () => {
   const currentPath = usePathname();
-  console.log(currentPath);
   const links = [
     { label: "projects", href: "/pages/projects" },
     { label: "products", href: "/pages/products" },
@@ -112,7 +111,7 @@ const Navbar = () => {
             <Link href="/#about"> {translation('about')}</Link>
             <Link href="/#contact"> {translation('contact')}</Link>
           </div>
-          <div className=" justify-center items-center text-black text-center cursor-pointer ">
+          <div className=" justify-center items-center text-black text-base  lg:text-lg xl:text-xl text-center cursor-pointer ">
             <LangSwitcher />
           </div>
         </div>
