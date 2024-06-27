@@ -3,6 +3,7 @@ import Panel from "./components/Panel";
 import About from "./components/About";
 import Station from "./components/Station";
 import { defaultLocale, locales } from "@/config";
+import Partner from "./components/Partner";
 
 export default function Home() {
 
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Station />
       <Contact />
+      <Partner/>
       
      
     </div>

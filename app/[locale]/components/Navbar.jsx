@@ -67,13 +67,13 @@ const Navbar = () => {
                   href="/pages/projects"
                   className="block py-3  px-4  hover:bg-black/40"
                 >
-                   {translation('automation')}
+                   {translation('solar')}
                 </Link>
                 <Link
                   href="/pages/projects"
                   className="block py-3 px-4  no-underline hover:bg-black/40"
                 >
-                   {translation('solar')}
+                   {translation('line')}
                 </Link>
               </div>
             </div>
@@ -163,14 +163,14 @@ const Navbar = () => {
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
-                  {translation('automation')}
+                  {translation('solar')}
                 </Link>
                 <Link
                   href="/pages/projects"
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
-                  {translation('solar')}
+                  {translation('line')}
                 </Link>
               </div>
             </div>

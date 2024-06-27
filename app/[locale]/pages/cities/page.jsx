@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import aydinImage from "@/public/assets/images/aydin.jpg";
 import { useTranslations } from "next-intl";
 import { useSearchParams } from 'next/navigation';
 

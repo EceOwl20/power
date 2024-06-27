@@ -11,7 +11,11 @@ const Contact = () => {
         <h2 className="font-bold">
           {translation('header')}
         </h2></div>
+        <div className="flex flex-col gap-[5px]">
         <p className="font-bold">{translation('phone')}</p>
+        <p className="font-bold">{translation('phone2')}</p>
+        <p className="font-bold">{translation('mail')}</p>
+        </div>
         <button className="text-sm lg:text-lg text-white bg-amber-400 w-auto h-auto rounded-full p-2 lg:px-4">{translation('button')}</button>
       </div>
     </div>

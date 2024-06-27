@@ -15,7 +15,8 @@
   "certificate":"Certificate",
   "deal":"Paris Climate Deal",
   "about":"About",
-  "contact":"Contact"
+  "contact":"Contact",
+  "line":"Energy Transmission Line"
 },
 
 "Panel":{
@@ -56,6 +57,8 @@
 "Contact":{
   "header":"Contact Us",
   "phone":"+90 242 322 60 00",
+  "phone2":"+90 532 417 52 16",
+  "mail":"info@onpowergroup.com",
   "button":"Get an Offer Now"
 },
 
@@ -73,19 +76,22 @@
   "nigde":"Niğde"
   
 },
-"Project":{
+"Projects":{
   "header":"Projects",
   "automation":"Hotel automation systems",
   "hotelText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+  "line":"Energy Transmission Line",
   "solar":"Solar Power Plants",
-  "solarText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+  "solarText":"Roof Type Solar Power Plant, Land Type Power Plant; We guarantee the production efficiency and product durability of the solar power plant project. The Solar Power Plants we install as On Power Energy Group are taking strong steps to end foreign dependency in natural energy production. We make a significant contribution to nature through our understanding of respect."
 },
-"Product":{
+"Products":{
   "header":"Products",
-  "generators":"Generators",
-  "generatorsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  "generator":"Generators",
+  "generatorText":"Every demand is met with Generators, Mobile Generators, Hybrid power systems, Cogeneration, Trigeneration, Lighting Towers. It has an annual production capacity of 15 thousand generators in its factories located in Kocaeli and Istanbul, with a total closed area of ​​70,000 m2. As an engineering and technology company that has been developing reliable and innovative products and producing uninterrupted energy solutions for a sustainable life since 1994, it has been serving in more than 130 countries on 6 continents.",
   "ups":"Ups Uninterruptible Power Supplies",
-  "upsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+  "upsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  "converter":"Static Frequency Converters",
+  "converterText":""
 },
 "Certificate":{
   "header":"Certificates",

@@ -1,51 +1,23 @@
 import React from "react";
-import Image from "next/image";
-import solarImage from "@/public/assets/images/solarpower.jpeg";
-import hotelImage from "@/public/assets/images/hotel.jpg";
-import { useTranslations } from "next-intl";
 
-const Projects = () => {
-  const t = useTranslations("Project");
+const Projects = ({header, text, img}) => {
   return (
     <div
-      className="flex flex-col mt-[180px] bg-cover bg-center w-auto items-center text-slate-900 justify-center mx-8 md:mx-20 lg:mx-32">
-      <div className="flex h-auto w-full text-start mb-3 lg:mb-10">
-        <h1 className="text-2xl lg:text-4xl font-bold">{t('header')}</h1>
+    className="relative h-screen bg-cover bg-center w-full flex justify-end  items-end" 
+    style={{ backgroundImage: `url(${img.src})` }}
+  >
+    <div className="relative flex flex-col justify-center items-center w-full lg:w-1/3 p-2 m-10 text-white">
+      <div className="bg-black/30 absolute inset-0 z-[1]"></div>
+      <div className="flex flex-col text-center z-10 ">
+        <p className="text-lg lg:text-2xl xl:text-3xl font-semibold mb-8">
+          {header}
+        </p>
+        <text className="text-xs lg:text-base 2xl:text-lg z-99">
+          {text}
+        </text>
       </div>
-
-      <div  className="flex flex-col lg:flex-row gap-10 xl:gap-20 items-center justify-center">
-
-       <div className="flex flex-col w-full lg:w-1/2 my-4 justify-center text-start">
-         <div className="w-full lg:w-3/4 flex flex-col gap-5">
-         <h2 className="text-xl lg:text-2xl font-semibold ">{t('automation')}</h2>
-         <div className="flex h-auto justify-center items-center">
-            <Image
-             src={hotelImage}
-             alt="logo"
-             layout="responsive"
-             objectFit="cover" />
-         </div>
-         <text className="text-sm lg:text-lg text-center">{t('hotelText')}</text>
-         </div>
-       </div>
-
-       <div className="flex flex-col w-full lg:w-1/2 my-6">
-         <div className="w-full lg:w-3/4 flex flex-col gap-5">
-         <h2 className="text-xl lg:text-2xl font-semibold ">{t('solar')}</h2>
-         <div className="flex h-auto ">
-            <Image
-             src={solarImage}
-             alt="logo"
-             layout="responsive"
-             objectFit="cover" />
-         </div>
-         <text className="text-sm lg:text-lg text-center">{t('solarText')}</text>
-         </div>
-       </div>
-
-      </div>
-
     </div>
+  </div>
   );
 };
 

@@ -16,7 +16,8 @@
       "certificate":"Sertifikalarımız",
       "deal":"Paris İklim Anlaşması",
       "about":"Hakkımızda",
-      "contact":"İletişim"
+      "contact":"İletişim",
+      "line":"Enerji Nakil Hattı"
     },
 
     "Panel":{
@@ -61,6 +62,8 @@
     "Contact":{
       "header":"Bize Ulaşın",
       "phone":"+90 242 322 60 00",
+      "phone2":"+90 532 417 52 16",
+      "mail":"info@onpowergroup.com",
       "button":"Hemen Teklif Al"
     },
 
@@ -78,19 +81,22 @@
       "Niğde":"Niğde text text text texttext text text texttext text text text"
     },
 
-    "Project":{
+    "Projects":{
       "header":"Projelerimiz",
       "automation":"Otel Otomasyon Sistemleri",
       "hotelText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "line":"Enerji Nakil Hattı",
       "solar":"Güneş Enerji Santralleri",
-      "solarText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+      "solarText":" Çatı Tipi GES, Arazi Tipi GES; GES projesinin üretim verimliliğini ve ürün dayanıklılığını garanti ediyoruz. On Power Enerji Grubu olarak kurulumunu yaptığımız Güneş Enerji Santralleri, doğal enerji üretiminde dışa bağımlılığın sona ermesi için güçlü adımlar atmaktadır. Doğaya saygı anlayışıyla önemli bir katkı sağlıyoruz."
     },
-    "Product":{
+    "Products":{
       "header":"Ürünlerimiz",
-      "generators":"Jeneratörler",
-      "generatorsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "generator":"Jeneratörler",
+      "generatorText":"Jeneratör, Mobil Jeneratör, Hibrit güç sistemleri, Kojenerasyon, Trijenerasyon, Aydınlatma Kuleleri ile her talebe cevap verilmektedir. Kocaeli ve İstanbul’da yer alan, toplam 70.000 m2 kapalı alana sahip fabrikalarında yıllık 15 bin adet jeneratör üretim kapasitesine sahiptir. 1994’ten bu yana sürdürülebilir bir yaşam için güvenilir ve yenilikçi ürünler geliştirip kesintisiz enerji çözümleri üreten bir mühendislik ve teknoloji şirketi olarak 6 kıtada 130’dan fazla ülkede hizmet vermektedir.",
       "ups":"Ups Kesintisiz Güç Kaynakları",
-      "upsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      "upsText":"KEMSAN bayisi olarak; Türk Silahlı Kuvvetleri'nin Kara, Hava ve Deniz Kuvvetleri'nin UPS tedarik ettiği firma olan KEMSAN'dan üstün teknoloji ile ürettiği tüm ürünleri ile hem satış hem de bakım hizmeti vermekteyiz. Denizaltı Akü Şarj Deşarj Sistemleri Yeni Tip Denizaltı Projesi Tip 214TN için AC ve DC Sahil Malzemeleri. MİLLİ PROJELER Gücünü Bizden Alır. Savunma Sanayii İçin Askeri Standartları Karşılar 400Hz Konvertörler, GPU, UPS, Redresörler, İnvertörler Helikopter Start Redresörleri ve Hava, Kara ve Deniz Platformları için özel tasarım ürünler.",
+      "converter":"Statik Frekans Konventörleri",
+      "converterText":""
     },
     "Certificate":{
       "header":"Sertifikalarımız",

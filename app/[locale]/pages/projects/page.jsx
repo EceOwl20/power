@@ -1,12 +1,17 @@
 import React from "react";
-import Projects2 from "./components/ProjectsSolar";
-import Projects3 from "./components/ProjectsHotel";
+import Image from "next/image";
+import solarImage from "@/public/assets/images/solarpower.jpeg";
+import Project from "./components/Projects";
+import { useTranslations } from "next-intl";
+import Line from "./components/Line";
 
 const page = () => {
+  const t = useTranslations("Projects");
   return (
     <div className="flex flex-col gap-[100px]">
-      <Projects2 />
-      <Projects3 />
+      <Project header={t("solar")} text={t("solarText")} img={solarImage}/>
+      
+      <Line />
     </div>
   );
 };
