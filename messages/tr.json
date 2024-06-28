@@ -102,5 +102,14 @@
       "header":"Sertifikalarımız",
       "text1":"Nuvo",
       "text2":"Sercons"
+    },
+
+    "VisionMission":{
+      "header":"Vizyon ve Misyon",
+      "vision":"Vizyon",
+      "visionText":"Hedef ülkelerde bilinen, güvenilir ve en karlı EPC (Mühendislik, Satınalma, İnşaat) şirket markası olmak.",
+      "mission":"Misyon",
+      "missionText":"Dünyada yeşil enerji kullanımını yaygınlaştırmak ve çocuklarımıza daha temiz bir dünya bırakmak.",
+      "text":"Personelimiz, bilgi birikimini ve en son teknolojiyi kullanarak projelerinin sürdürülebilirliğini garanti eder. On Power Energy Grubu için tasarlanan güneş enerjisi sistemleri ile izleme, takip ve analiz sistemleri ve projeye özel güç elektroniği ekipmanları ile hizmet veriyoruz."
     }
   }

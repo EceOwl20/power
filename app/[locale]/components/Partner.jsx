@@ -7,20 +7,23 @@ import kemsan from "@/public/assets/images/kemsan.png";
 const Partner = () => {
   return (
     
-    <div className="flex flex-col gap-2  justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <span className='text-3xl font-semibold'>Partners</span>
-        <div className='flex flex-col  mx-5 sm:mx-10 md:mx-16 text-center text-white gap-10 lg:grid-cols-3 lg:grid lg:grid-flow-row lg:gap-5 lg:mx-10 lg:my-2 xl:mx-20 xl:my-1 items-center justify-around'>
+        <div className='flex flex-col items-center mx-5 sm:mx-10 lg:mx-10 gap-[25px] lg:gap-[75px] md:mx-16 text-center text-white  lg:grid-cols-3 lg:grid lg:grid-flow-row   lg:my-2  xl:my-1 justify-around'>
       <Image
       src={teksan}
       alt={"teksan"}
+      layout='responsive'
       />
       <Image
       src={essan}
       alt={"essan"}
+      layout='responsive'
       />
       <Image
       src={kemsan}
       alt={"kemsan"}
+      layout='responsive'
       />
 
     </div>

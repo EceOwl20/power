@@ -97,5 +97,13 @@
   "header":"Certificates",
   "text1":"Nuvo",
   "text2":"Sercons"
-}
+},
+"VisionMission":{
+      "header":"Vision and Mission",
+      "vision":"Vision",
+      "visionText":"To be a well-known, reliable and most profitable EPC (Engineering, Procurement, Construction) company brand in target countries.",
+      "mission":"Mission",
+      "missionText":"To expand the use of green energy in the world and leave a cleaner world to our children.",
+      "text":"Our staff guarantees the sustainability of their projects using their knowledge and the latest technology. We provide services with solar energy systems, monitoring, tracking and analysis systems and project-specific power electronic equipment designed for On Power Energy Group."
+    }
 }

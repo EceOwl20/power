@@ -1,6 +1,7 @@
 "use client";
 import panelImage from "@/public/assets/images/panel.jpeg";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const Panel = () => {
 
@@ -22,8 +23,8 @@ const Panel = () => {
         <button
           id="about"
           className=" bg-amber-400 rounded-full px-6 py-3 lg:px-8  text-sm z-10 lg:text-base"
-        >
-          {translation("button")}
+        ><Link href="/pages/values"> {translation("button")}</Link>
+         
         </button>
       </div>
     </div>

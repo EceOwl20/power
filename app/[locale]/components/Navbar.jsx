@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import LangSwitcher from "../../../LangSwitcher";
 import { useTranslations } from "next-intl";
 
+
 const Navbar = () => {
   const currentPath = usePathname();
   const links = [
