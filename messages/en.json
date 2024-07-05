@@ -63,17 +63,17 @@
 },
 
 "City":{
-  "solar":"Solar Energy Systems",
-  "button":"More...",
-  "Afyon":"Afyon ",
-  "antalya":"Antalya",
-  "aydin":"Aydın",
-  "eskisehir":"Eskişehir",
-  "isparta":"Isparta",
-  "konya":"Konya",
-  "mugla":"Muğla",
-  "kutahya":"Kütahya",
-  "nigde":"Niğde"
+  "solar":"Güneş Enerjisi Sistemleri",
+      "button":"Daha fazlası...",
+      "Afyon":"Afyon Sansıklı GES",
+      "Antalya":"Antalya Finike Yazır GES",
+      "Aydın":"Aydın Didim GES",
+      "Eskişehir":"Eskişehir Çifteler GES",
+      "Isparta":"Isparta Gül GES",
+      "Konya":"Konya text text text texttext text text texttext text text text",
+      "Muğla":"Muğla Kozağaç GES",
+      "Kütahya":"Kütahya Gediz GES",
+      "Niğde":"Niğde text text text texttext text text texttext text text text"
   
 },
 "Projects":{
@@ -89,7 +89,7 @@
   "generator":"Generators",
   "generatorText":"Every demand is met with Generators, Mobile Generators, Hybrid power systems, Cogeneration, Trigeneration, Lighting Towers. It has an annual production capacity of 15 thousand generators in its factories located in Kocaeli and Istanbul, with a total closed area of ​​70,000 m2. As an engineering and technology company that has been developing reliable and innovative products and producing uninterrupted energy solutions for a sustainable life since 1994, it has been serving in more than 130 countries on 6 continents.",
   "ups":"Ups Uninterruptible Power Supplies",
-  "upsText":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  "upsText":"As a KEMSAN dealer; We provide both sales and maintenance services with all products produced with superior technology from KEMSAN, the company that supplies UPS to the Turkish Armed Forces, Land, Air and Naval Forces. Submarine Battery Charging Discharge Systems AC and DC Shore Materials for New Type Submarine Project Type 214TN. NATIONAL PROJECTS Get Their Power From Us. Meets Military Standards for the Defense Industry. 400Hz Converters, GPU, UPS, Rectifiers, Inverters, Helicopter Start Rectifiers and specially designed products for Air, Land and Sea Platforms.",
   "converter":"Static Frequency Converters",
   "converterText":""
 },

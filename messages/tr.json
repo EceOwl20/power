@@ -70,14 +70,14 @@
     "City":{
       "solar":"Güneş Enerjisi Sistemleri",
       "button":"Daha fazlası...",
-      "Afyon":"Afyon  text text text text text text text text text text text text text text text text",
-      "Antalya":"Antalya text text text text text text text text text text text texttext text text text",
-      "Aydın":"Aydın text text text text text text text texttext text text text",
-      "Eskişehir":"Eskişehir text text text texttext text text texttext text text text",
-      "Isparta":"Isparta text text text texttext text text texttext text text text",
+      "Afyon":"Afyon Sansıklı GES",
+      "Antalya":"Antalya Finike Yazır GES",
+      "Aydın":"Aydın Didim GES",
+      "Eskişehir":"Eskişehir Çifteler GES",
+      "Isparta":"Isparta Gül GES",
       "Konya":"Konya text text text texttext text text texttext text text text",
-      "Muğla":"Muğla text text text texttext text text texttext text text text",
-      "Kütahya":"Kütahya text text text texttext text text texttext text text text",
+      "Muğla":"Muğla Kozağaç GES",
+      "Kütahya":"Kütahya Gediz GES",
       "Niğde":"Niğde text text text texttext text text texttext text text text"
     },
 
@@ -107,9 +107,9 @@
     "VisionMission":{
       "header":"Vizyon ve Misyon",
       "vision":"Vizyon",
-      "visionText":"Hedef ülkelerde bilinen, güvenilir ve en karlı EPC (Mühendislik, Satınalma, İnşaat) şirket markası olmak.",
+      "visionText":"Hedef ülkelerde tanınan, güvenilir ve en kârlı EPC (Mühendislik, Satınalma, İnşaat) şirket markası olmak. Sektördeki en son yenilikleri ve teknolojileri takip ederek müşterilerimize en yüksek kalitede hizmet sunmak ve enerji çözümlerinde dünya çapında bir referans noktası haline gelmek. Sürdürülebilir enerji projeleri ile global ölçekte fark yaratmak ve çevresel sorumluluk bilinciyle hareket ederek, enerji sektöründe örnek bir lider olmak.",
       "mission":"Misyon",
-      "missionText":"Dünyada yeşil enerji kullanımını yaygınlaştırmak ve çocuklarımıza daha temiz bir dünya bırakmak.",
+      "missionText":"Dünyada yeşil enerji kullanımını yaygınlaştırmak ve çocuklarımıza daha temiz bir dünya bırakmak. Müşterilerimize, sürdürülebilir ve yenilikçi enerji çözümleri sunarak, onların enerji ihtiyaçlarını en verimli ve çevre dostu şekilde karşılamak. Toplumun her kesiminde yeşil enerji bilincini artırmak ve enerji projelerimizle ekonomik kalkınmaya katkıda bulunmak. Doğal kaynakları koruma ve gelecek nesillere yaşanabilir bir dünya bırakma hedefi doğrultusunda, sürekli gelişim ve mükemmeliyeti ilke edinmek.",
       "text":"Personelimiz, bilgi birikimini ve en son teknolojiyi kullanarak projelerinin sürdürülebilirliğini garanti eder. On Power Energy Grubu için tasarlanan güneş enerjisi sistemleri ile izleme, takip ve analiz sistemleri ve projeye özel güç elektroniği ekipmanları ile hizmet veriyoruz."
     }
   }
