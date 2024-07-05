@@ -37,8 +37,6 @@ const Footer = () => {
               <Image
                 src={logo}
                 alt="logo"
-                layout="responsive"
-                objectFit="contain"
               />
             </div>
           </div>

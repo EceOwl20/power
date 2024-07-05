@@ -50,8 +50,9 @@ const Navbar = () => {
             <Image
               src={navbarlogo}
               alt="logo"
-              layout="responsive"
-              objectFit="contain"
+              width={navbarlogo.width}
+              height={navbarlogo.height}
+             
             />
           </div>
           <div className="flex gap-[18px] xl:gap-10 2xl:gap-18 justify-center items-end text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold text-white mx-2 z-99">
