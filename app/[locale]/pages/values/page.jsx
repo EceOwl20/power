@@ -1,5 +1,5 @@
 import React from 'react'
-import Vision from './Vision';
+import Vision from './vision';
 
 const ValuesPage = () => {
   return (

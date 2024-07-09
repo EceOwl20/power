@@ -2,7 +2,7 @@ import React from 'react';
 import visionImage from "@/public/assets/images/vision.jpg";
 import { useTranslations } from "next-intl";
 
-const Vision = () => {
+const vision = () => {
     const t = useTranslations("VisionMission");
   return (
     <div className='flex h-screen w-screen bg-neutral-900'>
@@ -26,4 +26,4 @@ const Vision = () => {
   )
 }
 
-export default Vision
+export default vision
