@@ -3,7 +3,7 @@ import React from 'react'
 import { useTranslations } from "next-intl";
 import { useSearchParams } from 'next/navigation';
 
-const page = () => {
+const CitiesPage = () => {
   const searchParams = useSearchParams();
   const city = searchParams.get('city');
   const img = searchParams.get('img');
@@ -35,4 +35,4 @@ const page = () => {
   )
 }
 
-export default page
+export default CitiesPage

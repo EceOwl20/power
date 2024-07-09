@@ -1,8 +1,7 @@
 import React from 'react'
-import VisionMission from './VisionMission';
-import Vision from './vision';
+import Vision from './Vision';
 
-const page = () => {
+const ValuesPage = () => {
   return (
     <div className='flex pt-40 bg-neutral-900'>
       <Vision/>
@@ -10,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default ValuesPage

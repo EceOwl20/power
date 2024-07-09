@@ -1,7 +1,7 @@
 import React from "react";
 import Products from "./components/Products";
 
-const page = () => {
+const ProductPage = () => {
   return (
     <section className="flex flex-col gap-16">
      <Products />
@@ -9,4 +9,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProductPage;
