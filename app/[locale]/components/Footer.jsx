@@ -49,19 +49,14 @@ const Footer = () => {
               <h4 className="bold-18 whitespace-nowrap">
                 {translation("title")}
               </h4>
-              <ul className=" flex flex-col gap-1 mt-[6px] lg:mt-[12px]">
+              <ul className=" flex flex-row gap-10 mt-[6px] lg:mt-[12px]">
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
                   href="/#about"
                 >
                   {translation("about")}
                 </Link>
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
-                >
-                  {translation("onpower")}
-                </Link>
+                
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
                   href="/"
@@ -76,76 +71,13 @@ const Footer = () => {
                 </Link>
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
+                  href={translation("linkblog")}
                 >
                   {translation("blog")}
                 </Link>
               </ul>
             </div>
-
-            <div className="flex-col items-center justify-center gap-5 text-center">
-              <h4 className="bold-18 whitespace-nowrap">
-                {translation("title2")}
-              </h4>
-              <ul className=" flex flex-col gap-1 mt-[6px] lg:mt-[12px]">
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
-                >
-                  {translation("automation")}
-                </Link>
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
-                >
-                  {translation("mechanic")}
-                </Link>
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
-                >
-                  {translation("electric")}
-                </Link>
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
-                >
-                  {translation("electronic")}
-                </Link>
-              </ul>
-            </div>
-
-            <div className="flex-col items-center justify-center gap-5 text-center">
-              <h4 className="bold-18 whitespace-nowrap">
-                {translation("title3")}
-              </h4>
-              <ul className=" flex flex-col gap-1 mt-[6px] lg:mt-[12px]">
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/pages/projects"
-                >
-                  {translation("solar")}
-                </Link>
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/pages/projects"
-                >
-                  {translation("stations")}
-                </Link>
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/pages/products"
-                >
-                  {translation("generators")}
-                </Link>
-                <Link
-                  className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/pages/products"
-                >
-                  {translation("ups")}
-                </Link>
-              </ul>
-            </div>
+            
           </div>
         </div>
 
