@@ -22,7 +22,8 @@
       "linkproject":"/tr/pages/projects",
       "linkproduct":"/tr/pages/products",
       "linkcertificate":"/tr/pages/certificate",
-      "linkabout":"/tr/pages/about"
+      "linkabout":"/tr/pages/about",
+      "linkups":"/tr/pages/products#ups"
     },
 
     "Panel":{

@@ -84,7 +84,7 @@ const Navbar = () => {
                    {translation('generators')}
                 </Link>
                 <Link
-                  href={translation("linkproduct")}
+                  href={translation("linkups")}
                   className="block py-3 px-4  no-underline hover:bg-black/40"
                 >
                    {translation('ups')}
@@ -155,14 +155,14 @@ const Navbar = () => {
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
-                  href="/pages/projects"
+                  href={translation("linkproject")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
                   {translation('solar')}
                 </Link>
                 <Link
-                  href="/pages/projects"
+                  href={translation("linkproject")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
@@ -186,7 +186,7 @@ const Navbar = () => {
                   {translation('generators')}
                 </Link>
                 <Link
-                  href="/pages/products"
+                  href={translation("linkproduct")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
@@ -203,7 +203,7 @@ const Navbar = () => {
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
-                  href="/pages/certificate"
+                  href={translation("linkcertificate")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
