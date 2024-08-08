@@ -12,6 +12,7 @@ import kutahyaImage from "@/public/assets/images/kutahya.jpg";
 import muglaImage from "@/public/assets/images/mugla.jpg";
 import nigdeImage from "@/public/assets/images/nigde.jpg";
 
+
 const Station = () => {
   const translation = useTranslations("Station");
 

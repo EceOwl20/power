@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-const City = ({city, link, img}) => {
+const City = ({city, link, img, images}) => {
   const translation = useTranslations('City');
   return (
     <div className="flex flex-col relative mt-[24px] h-80 md:h-96 bg-cover bg-center w-full justify-center items-center gap-4"

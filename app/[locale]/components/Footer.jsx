@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-900 text-white mt-12 lg:mt-20">
       <div className="container mx-[5px] sm:mx-auto px-6 md:px-12 lg:px-18 flex flex-col items-center justify-center gap-[24px]">
-        <div className="flex flex-col justify-center items-center text-center xl:flex-row xl:gap-16 w-full py-4">
-          <div className="flex flex-col lg:gap-10 ">
+        <div className="flex flex-col justify-around items-center text-center xl:flex-row xl:gap-16 w-full py-4">
+          <div className="flex flex-col lg:flex-row lg:gap-20 ">
             <div className=" w-auto h-auto py-[10px] lg:py-[16px] mt-2">
               <text className="text-xl font-semibold text-center lg:text-xl">
                 {translation("social")}
@@ -45,11 +45,11 @@ const Footer = () => {
             className="flex flex-wrap gap-10 xl:gap-16 justify-center my-5
                      text-white text-start text-sm lg:text-xl font-medium"
           >
-            <div className="flex-col items-center justify-center gap-5 text-center">
+            <div className="flex-col items-center justify-center gap-6 text-center">
               <h4 className="bold-18 whitespace-nowrap">
                 {translation("title")}
               </h4>
-              <ul className=" flex flex-row gap-10 mt-[6px] lg:mt-[12px]">
+              <ul className=" flex flex-row gap-20 mt-[6px] lg:mt-[12px]">
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
                   href="/#about"

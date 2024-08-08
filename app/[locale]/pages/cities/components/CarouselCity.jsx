@@ -7,6 +7,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { BsChevronRight,BsChevronLeft } from "react-icons/bs";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward, IoIosCloseCircleOutline } from "react-icons/io";
+import ReactPlayer from "react-player";
 
 const CarouselCity = ({images}) => {
 
@@ -37,29 +38,17 @@ const CarouselCity = ({images}) => {
     setCurrentIndex(newIndex);
   };
 
-
-
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 3000 }),
-  ]);
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-
-
   const searchParams = useSearchParams();
   const city = searchParams.get("city");
   const img = searchParams.get("img");
 
   const t = useTranslations("City");
   return (
-    <div className="flex flex-col gap-4 md:gap-8 lg:gap-4 items-center justify-center">
+    <div className="flex flex-col gap-4 lg:gap-0 items-center justify-center">
+      <div className='flex h-[120px] w-full bg-neutral-900'></div>
+      <div className="flex flex-col lg:flex-row items-center justify-around h-screen">
 
+      <div className="flex flex-col gap-[20px]">
       <div
         className="relative mt-32 h-[200px] w-[300px] lg:h-[300px] lg:w-[400px] xl:h-[400px] xl:w-[550px] bg-cover bg-center justify-center items-center "
         style={{ backgroundImage: `url(${img})` }}
@@ -79,54 +68,40 @@ const CarouselCity = ({images}) => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center mx-10 md:mx-16 lg:mx-20 xl:mx-56 gap-3 text-center">
+      <div className="flex flex-col items-center justify-center mx-10 md:mx-16 lg:mx-20 gap-3 text-center">
         <text className="text-lg lg:text-xl font-semibold">{t("solar")}</text>
         <div className="flex w-full h-[1px] bg-slate-200"></div>
         <p className="text-sm lg:text-base ">{t(city)}</p>
       </div>
-
-
-<div
-      className=" relative mt-4 h-[200px] w-[300px] lg:h-[300px] lg:w-[400px] xl:h-[400px] xl:w-[550px] bg-cover bg-center justify-center items-center overflow-hidden "
-      ref={emblaRef}
-    >
-      <div className="flex grid-flow-col min-h-screen">
-        {images.map((image, index) => (
-          <div className="flex-[0_0_auto] " key={index}>
-            <Image src={image} style={{objectFit:'responsive'}} width={550} height={400} alt={`Slide ${index + 1}`} className="flex"/>
-          </div>
-        ))}
       </div>
 
-      <div className="absolute inset-0 flex items-center justify-between p-5">
-        <button className="p-1 hidden lg:flex" onClick={scrollPrev} type="button">
-          <BsChevronLeft size={20} color="white"/>
-        </button>
 
-        <button onClick={scrollNext} className="p-1 hidden lg:flex">
-          <BsChevronRight size={20} color="white"/>
-        </button>
-      </div>
-    </div>
-
+{/* grid photos */}
     <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
       {images.length > 0 && (
         <div className="mb-4" onClick={() => handleImageClick(images[0], 0)}>
-          <Image src={images[0]} alt={`Image 1`} className="w-full h-auto cursor-pointer" layout="responsive" width={700} height={475} />
+          <ReactPlayer url="https://www.youtube.com/watch?v=TawJiLUB1Yg" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {images.slice(1).map((src, index) => (
-          <div key={index + 1} onClick={() => handleImageClick(src, index + 1)}>
-            <Image src={src} alt={`Image ${index + 2}`} className="w-full h-auto cursor-pointer" layout="responsive" width={350} height={475} />
+        {images.map((src, index) => (
+          <div key={index} onClick={() => handleImageClick(src, index)}>
+            <Image
+              src={src}
+              alt={`Image ${index + 1}`}
+              className="w-full h-auto cursor-pointer"
+              layout="responsive"
+              width={350}
+              height={475}
+            />
           </div>
         ))}
       </div>
     </div>
 
       {isFullScreen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 top-36">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 top-36 ">
           <button className="absolute top-0 right-2 px-3 py-1 rounded-full text-lg font-extrabold text-white" onClick={handleCloseFullScreen}><IoIosCloseCircleOutline size={40}/></button>
           <button className="absolute left-2 px-3 py-1 text-white rounded-full text-lg font-bold" onClick={handlePrevImage}><IoIosArrowBack size={40}/></button>
           <Image src={selectedImage} alt="Full Screen Image" className="cursor-pointer" layout="responsive" width={1200} height={800} />
@@ -135,6 +110,7 @@ const CarouselCity = ({images}) => {
       )}
 
     </div>
+      </div>
     </div>
   );
 };
