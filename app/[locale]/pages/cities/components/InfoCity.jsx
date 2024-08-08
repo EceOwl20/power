@@ -12,6 +12,7 @@ const InfoCity = () => {
 
   return (
     <div className="flex flex-col gap-4 md:gap-8 items-center justify-center">
+      <div className='flex h-[120px] w-full bg-neutral-900'></div>
       <div
         className="relative mt-32 h-[200px] w-[300px] lg:h-[300px] lg:w-[400px] xl:h-[400px] xl:w-[550px] bg-cover bg-center justify-center items-center "
         style={{ backgroundImage: `url(${img})`}}

@@ -110,7 +110,7 @@ const imagesYava = [
 
 const page = () => {
   return (
-    <div>
+    <div className='flex flex-col'>
       <Ges images={imagesSinan} images2={imagesSeki} images3={imagesYava} images4={imagesKavaklıdere} images5={imagesUlas} images6={imagesKöklük} images7={imagesYaylıatlı} images8={imagesAktas} images9={imagesDerekoy}/>
     </div>
   )

@@ -49,7 +49,7 @@ const Footer = () => {
               <h4 className="bold-18 whitespace-nowrap">
                 {translation("title")}
               </h4>
-              <ul className=" flex flex-row gap-20 mt-[6px] lg:mt-[12px]">
+              <ul className=" flex flex-row gap-2 lg:gap-20 mt-[6px] lg:mt-[12px]">
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
                   href="/#about"

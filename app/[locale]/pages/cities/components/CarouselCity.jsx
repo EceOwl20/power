@@ -1,10 +1,7 @@
 "use client";
-import React, {useCallback, useState} from "react";
+import React, { useState} from "react";
 import { useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { BsChevronRight,BsChevronLeft } from "react-icons/bs";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward, IoIosCloseCircleOutline } from "react-icons/io";
 import ReactPlayer from "react-player";

@@ -1,5 +1,5 @@
 "use client";
-import React, {useCallback, useState} from "react";
+import React, {useState} from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward, IoIosCloseCircleOutline } from "react-icons/io";
@@ -7,8 +7,9 @@ import ReactPlayer from "react-player";
 
 const Ges = ({images, images2, images3, images4, images5, images6, images7, images8, images9}) => {
 
+  const videoUrl="https://www.youtube.com/watch?v=QaitS1Gn8MA";
     const [isFullScreen, setIsFullScreen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleImageClick = (src, index) => {
@@ -45,12 +46,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Sinanpasa</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=TawJiLUB1Yg" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
@@ -87,12 +88,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Seki</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images2.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images2[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=KKDPXlEDMao" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
@@ -129,12 +130,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Yava</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images3.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images3[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=QaitS1Gn8MA" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
@@ -170,12 +171,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Kavaklıdere GES</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images4.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images4[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=LdnmsMt_cR8" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
@@ -211,12 +212,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Ulaş</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images5.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images5[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=wPHE8LjSF_o" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
@@ -252,12 +253,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Köklük</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images6.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images6[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=32ChsAtsd0I" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
@@ -293,12 +294,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Yaylaatlıdere</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images7.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images7[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=mWvykZ04v2U" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
@@ -334,12 +335,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Aktaş</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images8.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images8[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=DvCMBNY0Tn0" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}
@@ -376,12 +377,12 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Dereköy</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
-    <text className="text-[14px] lg:text-[18px]">fjwrıgşeklrwgjr ekljgklerjbkler jgsşvkrlbjglr</text>
+    <text className="text-[14px] lg:text-[18px]"></text>
    </div>
-    <div className="flex flex-col-reverse lg:flex-row font-hurme w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
+    <div className="flex flex-col-reverse lg:flex-row font-hurme w-full md:w-10/12 lg:w-4/6 xl:w-2/5 justify-center lg:items-start items-center xl:gap-4">
     <div className="p-4">
-      {images9.length > 0 && (
-        <div className="mb-4" onClick={() => handleImageClick(images9[0], 0)}>
+      {videoUrl && (
+        <div className="mb-4" >
           <ReactPlayer url="https://www.youtube.com/watch?v=71L32RkIwnM" layout="responsive" width="100%" height={475} controls/>
         </div>
       )}

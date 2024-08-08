@@ -6,7 +6,7 @@ const About = () => {
   const translation = useTranslations('About');
   return (
     <div>
-      <div className="flex flex-col justify-center items-center text-center h-full w-auto mx-4 lg:mx-16 gap-5 lg:gap-10 mt-[100px]">
+      <div className="flex flex-col justify-center items-center text-center h-full w-auto mx-4 lg:mx-16 gap-5 lg:gap-10 mt-[50px] lg:mt-[100px]">
         <h2 className="xl:text-4xl text-2xl text-black font-bold">
           {translation("header")}
         </h2>
