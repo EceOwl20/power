@@ -16,7 +16,9 @@ const Contact = () => {
         <p className="font-bold">{translation('phone2')}</p>
         <p className="font-bold">{translation('mail')}</p>
         </div>
+        <a href="mailto:tamer.onsoy@onpowergroup.com">
         <button className="text-sm lg:text-lg text-white bg-amber-400 w-auto h-auto rounded-full p-2 lg:px-4">{translation('button')}</button>
+        </a>
       </div>
     </div>
   );

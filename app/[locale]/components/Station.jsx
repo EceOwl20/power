@@ -12,6 +12,7 @@ import kutahyaImage from "@/public/assets/images/kutahya.jpg";
 import muglaImage from "@/public/assets/images/mugla.jpg";
 import nigdeImage from "@/public/assets/images/nigde.jpg";
 
+
 const Station = () => {
   const translation = useTranslations("Station");
 
@@ -29,17 +30,17 @@ const Station = () => {
         </div>
       </div>
       <div className="relative flex flex-col  mx-5 sm:mx-10 md:mx-16 text-center text-white gap-10 lg:grid-cols-3 lg:grid lg:grid-flow-row lg:gap-5  lg:mx-10 lg:my-4 xl:mx-20 xl:my-8">
-        <City city="Afyon" link="/pages/cities" img={afyonImage} />
-        <City city="Antalya" link="/pages/cities" img={antalyaImage} />
-        <City city="Aydın" link="/pages/cities" img={aydinImage} />
+        <City city="Afyon" link={translation("linkcity")} img={afyonImage} />
+        <City city="Antalya" link={translation("linkcity")} img={antalyaImage} />
+        <City city="Aydın" link={translation("linkcity")}img={aydinImage} />
 
-        <City city="Eskişehir" link="/pages/cities" img={eskisehirImage} />
-        <City city="Isparta" link="/pages/cities" img={ispartaImage} />
-        <City city="Konya" link="/pages/cities" img={konyaImage} />
+        <City city="Eskişehir" link={translation("linkcity")} img={eskisehirImage} />
+        <City city="Isparta" link={translation("linkcity")} img={ispartaImage} />
+        <City city="Konya" link={translation("linkcity")} img={konyaImage} />
 
-        <City city="Kütahya" link="/pages/cities" img={kutahyaImage} />
-        <City city="Muğla" link="/pages/cities" img={muglaImage} />
-        <City city="Niğde" link="/pages/cities" img={nigdeImage} />
+        <City city="Kütahya" link={translation("linkcity")} img={kutahyaImage} />
+        <City city="Muğla" link={translation("linkcity")} img={muglaImage} />
+        <City city="Niğde" link={translation("linkcity")} img={nigdeImage} />
         <div id="contact" className="h-[1px] mb-12 bg-white"></div>
       </div>
     </div>

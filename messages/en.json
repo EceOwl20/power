@@ -16,7 +16,13 @@
   "deal":"Paris Climate Deal",
   "about":"About",
   "contact":"Contact",
-  "line":"Energy Transmission Line"
+  "line":"Energy Transmission Line",
+  "linkhome":"/en",
+  "linkproject":"/en/pages/projects",
+  "linkproduct":"/en/pages/products",
+  "linkups":"/en/pages/products#ups",
+  "linkcertificate":"/en/pages/certificate",
+  "linkabout":"/en/pages/about"
 },
 
 "Panel":{
@@ -42,17 +48,19 @@
   "solar":"Solar Energy",
   "stations":"Power Plants",
   "generators":"Generator",
-  "ups":"UPS"
+  "ups":"UPS",
+  "linkblog":"en/pages/blog"
 },
 
 "About":{
   "header":"About Onpowergroup",
-  "title":"25 Years of Manufacturing Excellence in Best Quality.",
+  "title":"10 Years of Manufacturing Excellence in Best Quality.",
   "text":"It is a group formed with 30 years of experience in 160 Mw SPP installation experience, Investment Consultancy, and Incentive Consultancy since 2015. It guarantees the sustainability of its projects using its strong staff, high knowledge, and technology.",
   "button":"More..."
 },
 "Station":{
-  "header":"SOLAR POWER PLANTS"
+  "header":"SOLAR POWER PLANTS",
+  "linkcity":"/en/pages/cities"
 },
 "Contact":{
   "header":"Contact Us",
@@ -63,8 +71,8 @@
 },
 
 "City":{
-  "solar":"Güneş Enerjisi Sistemleri",
-      "button":"Daha fazlası...",
+  "solar":"Solar Power Plants",
+      "button":"More...",
       "Afyon":"Afyon Sansıklı GES",
       "Antalya":"Antalya Finike Yazır GES",
       "Aydın":"Aydın Didim GES",
@@ -101,7 +109,7 @@
 "VisionMission":{
       "header":"Vision and Mission",
       "vision":"Vision",
-      "visionText":"To be a well-known, reliable and most profitable EPC (Engineering, Procurement, Construction) company brand in target countries.",
+      "visionText":"To be the EPC-F (Engineering, Purchasing, Construction-Finance) company brand that is known domestically and internationally, reliable and provides the fastest service. To provide the highest quality service to our customers by following the latest innovations and technologies in the sector and to become a reference point worldwide in energy solutions. To support investors with international funds to meet the financial needs of the projects. To make a difference on a global scale with sustainable energy projects and to be an exemplary company in the energy sector by acting with environmental responsibility awareness.",
       "mission":"Mission",
       "missionText":"To expand the use of green energy in the world and leave a cleaner world to our children.",
       "text":"Our staff guarantees the sustainability of their projects using their knowledge and the latest technology. We provide services with solar energy systems, monitoring, tracking and analysis systems and project-specific power electronic equipment designed for On Power Energy Group."

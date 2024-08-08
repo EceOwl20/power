@@ -13,9 +13,9 @@ const Products = () => {
       </div>
 
       <div className="flex flex-col gap-8 xl:gap-20 items-center justify-center xl:h-auto">
-        <ProductComp productName={t("generator")} productText={t("generatorText")} productImage={jeneratorImage}/>
-        <ProductComp productName={t("ups")} productText={t("upsText")} productImage={upsImage}/>
-        <ProductComp productName={t("converter")} productText={t("converterText")} productImage={converterImage}/>
+        <ProductComp id="generator" productName={t("generator")} productText={t("generatorText")} productImage={jeneratorImage}/>
+        <ProductComp id="ups" productName={t("ups")} productText={t("upsText")} productImage={upsImage}/>
+        <ProductComp id="converter" productName={t("converter")} productText={t("converterText")} productImage={converterImage}/>
       </div>
     </div>
   );

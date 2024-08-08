@@ -11,12 +11,6 @@ import { useTranslations } from "next-intl";
 
 
 const Navbar = () => {
-  const currentPath = usePathname();
-  const links = [
-    { label: "projects", href: "/pages/projects" },
-    { label: "products", href: "/pages/products" },
-    { label: "certificate", href: "/pages/certificate" },
-  ];
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
@@ -56,7 +50,7 @@ const Navbar = () => {
             />
           </div>
           <div className="flex gap-[18px] xl:gap-10 2xl:gap-18 justify-center items-end text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold text-white mx-2 z-99">
-            <Link href="/" className=" whitespace-nowrap rounded-md">
+            <Link href={translation("linkhome")} className=" whitespace-nowrap rounded-md">
             {translation('homepage')}
             </Link>
             <div className="relative group">
@@ -65,13 +59,13 @@ const Navbar = () => {
               </button>
               <div className="absolute pt-2 text-lg xl:w-48 w-30 bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
-                  href="/pages/projects"
+                  href={translation("linkproject")}
                   className="block py-3  px-4  hover:bg-black/40"
                 >
                    {translation('solar')}
                 </Link>
                 <Link
-                  href="/pages/projects"
+                  href={translation("linkproject")}
                   className="block py-3 px-4  no-underline hover:bg-black/40"
                 >
                    {translation('line')}
@@ -84,13 +78,13 @@ const Navbar = () => {
               </button>
               <div className="absolute pt-2 w-48 text-lg bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
-                  href="/pages/products"
+                  href={translation("linkproduct")}
                   className="block py-5 px-4  hover:bg-black/40"
                 >
                    {translation('generators')}
                 </Link>
                 <Link
-                  href="/pages/products"
+                  href={translation("linkups")}
                   className="block py-3 px-4  no-underline hover:bg-black/40"
                 >
                    {translation('ups')}
@@ -103,14 +97,15 @@ const Navbar = () => {
               </button>
               <div className="absolute pt-2 w-48 text-lg bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
                 <Link
-                  href="/pages/certificate"
+                  href={translation("linkcertificate")}
                   className="block py-2 px-3 hover:bg-black/40"
                 >
                    {translation('deal')}
                 </Link>
+                
               </div>
             </div>
-            <Link href="/#about"> {translation('about')}</Link>
+            <Link href={translation("linkabout")}> {translation('about')}</Link>
             <Link href="/#contact"> {translation('contact')}</Link>
           </div>
           <div className=" justify-center items-center text-black text-base  lg:text-lg xl:text-xl text-center cursor-pointer ">
@@ -160,14 +155,14 @@ const Navbar = () => {
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
-                  href="/pages/projects"
+                  href={translation("linkproject")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
                   {translation('solar')}
                 </Link>
                 <Link
-                  href="/pages/projects"
+                  href={translation("linkproject")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
@@ -191,7 +186,7 @@ const Navbar = () => {
                   {translation('generators')}
                 </Link>
                 <Link
-                  href="/pages/products"
+                  href={translation("linkproduct")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
@@ -208,7 +203,7 @@ const Navbar = () => {
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
-                  href="/pages/certificate"
+                  href={translation("linkcertificate")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
