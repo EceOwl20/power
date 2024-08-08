@@ -39,10 +39,10 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
   return (
     <div className="flex flex-col gap-4 lg:gap-0 items-center justify-center">
       <div className='flex h-[120px] w-full bg-neutral-900'></div>
-      <div className="flex flex-col items-center justify-center mt-10 lg:mt-16">
+      <div className="flex flex-col items-center justify-center mt-10 lg:mt-16 gap-[30px] lg:gap-[55px]">
 
 {/* grid photos */}
-   <div className="flex flex-col gap-5 items-center justify-center ">
+   <div className="flex flex-col gap-4 items-center justify-center ">
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Sinanpasa</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
@@ -84,7 +84,7 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    </div>
 
 {/* ************* */}
-   <div className="flex flex-col gap-5 items-center justify-center ">
+   <div className="flex flex-col gap-4 items-center justify-center ">
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Seki</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
@@ -126,7 +126,7 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    </div>
 
 {/* ************* */}
-   <div className="flex flex-col gap-5 items-center justify-center ">
+   <div className="flex flex-col gap-4 items-center justify-center ">
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Yava</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
@@ -167,7 +167,7 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
     </div>
    </div>
    {/* ************* */}
-   <div className="flex flex-col gap-5 items-center justify-center ">
+   <div className="flex flex-col gap-4 items-center justify-center ">
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Kavaklıdere GES</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
@@ -208,7 +208,7 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
     </div>
    </div>
    {/* ************* */}
-   <div className="flex flex-col gap-5 items-center justify-center ">
+   <div className="flex flex-col gap-4 items-center justify-center ">
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Ulaş</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
@@ -249,7 +249,7 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
     </div>
    </div>
    {/* ************* */}
-   <div className="flex flex-col gap-5 items-center justify-center ">
+   <div className="flex flex-col gap-4 items-center justify-center ">
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Köklük</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
@@ -331,7 +331,7 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
     </div>
    </div>
    {/* ************* */}
-   <div className="flex flex-col gap-5 items-center justify-center ">
+   <div className="flex flex-col gap-4 items-center justify-center ">
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Aktaş</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>
@@ -373,7 +373,7 @@ const Ges = ({images, images2, images3, images4, images5, images6, images7, imag
    </div>
 
    {/* ************* */}
-   <div className="flex flex-col gap-5 items-center justify-center ">
+   <div className="flex flex-col gap-4 items-center justify-center ">
    <div className="flex flex-col gap-3 text-neutral-900 text-center">
     <span className="text-[18px] lg:text-[22px] leading-normal">Dereköy</span>
     <div className="h-[1px] bg-stone-300 w-full flex"></div>

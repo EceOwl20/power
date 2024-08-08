@@ -4,6 +4,7 @@ import sinanpasa from "@/public/assets/images/sinanpasa1.jpg";
 import sinanpasa2 from "@/public/assets/images/sinanpasa2.jpg";
 import sinanpasa3 from "@/public/assets/images/sinanpasa3.jpg";
 import sinanpasa4 from "@/public/assets/images/sinanpasa.jpg";
+
 import seki from "@/public/assets/images/seki1.jpg";
 import seki2 from "@/public/assets/images/seki2.jpg";
 import seki3 from "@/public/assets/images/seki3.jpg";
@@ -33,12 +34,12 @@ import yaylıatlı2 from "@/public/assets/images/yaylıatlı2.jpg";
 import yaylıatlı3 from "@/public/assets/images/yaylıatlı3.jpg";
 import yaylıatlı4 from "@/public/assets/images/yaylıatlı4.jpg";
 
-import aktas1 from "@/public/assets/images/aktas1.jpg";
+import aktas from "@/public/assets/images/aktas1.jpg";
 import aktas2 from "@/public/assets/images/aktas2.jpg";
 import aktas3 from "@/public/assets/images/aktas3.jpg";
 import aktas4 from "@/public/assets/images/aktas4.jpg";
 
-import derekoy1 from "@/public/assets/images/derekoy1.jpg";
+import derekoy from "@/public/assets/images/derekoy1.jpg";
 import derekoy2 from "@/public/assets/images/derekoy2.jpg";
 import derekoy3 from "@/public/assets/images/derekoy3.jpg";
 import derekoy4 from "@/public/assets/images/derekoy4.jpg";
@@ -94,14 +95,14 @@ const imagesYava = [
   ];
 
   const imagesAktas = [
-    aktas1,
+    aktas,
     aktas2,
     aktas3,
     aktas4
   ];
 
   const imagesDerekoy = [
-    derekoy1,
+    derekoy,
     derekoy2,
     derekoy3,
     derekoy4
