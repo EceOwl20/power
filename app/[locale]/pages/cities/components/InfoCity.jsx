@@ -29,7 +29,7 @@ const InfoCity = () => {
         <text className='text-lg lg:text-xl font-semibold'>{t("solar")}</text>
         <div className='flex w-full h-[1px] bg-slate-200'></div>
         <p className='text-sm lg:text-base '>{t(city)}</p>
-        <a href='/pages/cities/ges'><button className='flex bg-neutral-900 py-[10px] px-[40px] text-[20px] font-semibold rounded-md text-white font-serif mt-2 lg:mt-4'>GES</button></a>
+        <a href='/pages/cities/ges'><button className='flex bg-neutral-900 py-[10px] px-[40px] text-[20px] font-semibold rounded-md text-white font-serif mt-2 lg:mt-4'>{t("gallery")}</button></a>
         </div>
     </div>
   )

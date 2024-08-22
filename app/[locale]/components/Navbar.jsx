@@ -212,7 +212,7 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              href="/#about"
+              href={translation("linkabout")}
               onClick={toggleSidebar}
               className=" px-3 py-2 rounded-md text-lg mt-4"
             >
