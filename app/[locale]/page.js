@@ -20,7 +20,7 @@ export default function Home() {
       <Panel images={imagesCarousel}/>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-[1px]">
       <About />
-      <Form/>
+      {/* <Form/> */}
       </div>
       <IconSection/>
       <Station />
