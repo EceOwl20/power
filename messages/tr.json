@@ -27,8 +27,8 @@
     },
 
     "Panel":{
-      "text":"2015 yılından bugüne kadar 160 MWp GES tecrübesi ile anahtar teslimi projeler yapıyoruz.",
-      "header":"SÜRDÜRÜLEBİLİR GARANTİLİ GES PROJELERİNDE BİZ VARIZ",
+      "text":"Detaylı bilgi için yandaki formu doldurun.",
+      "header":"15 yıl devlet elektrik alım garantisi ile %100 finansman sağlayarak güneş enerji santralinizi kuruyor,  15 yıl boyunca kontrolünü biz yapıyoruz. ",
       "button":"Daha fazlası..."
     },
 
@@ -86,7 +86,8 @@
       "Konya":"Konya text text text texttext text text texttext text text text",
       "Muğla":"Muğla Kozağaç GES",
       "Kütahya":"Kütahya Gediz GES",
-      "Niğde":"Niğde text text text texttext text text texttext text text text"
+      "Niğde":"Niğde text text text texttext text text texttext text text text",
+      "gallery":"Galeri"
     },
 
     "Projects":{
