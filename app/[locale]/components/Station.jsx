@@ -17,7 +17,7 @@ const Station = () => {
   const translation = useTranslations("Station");
 
   return (
-    <div className="flex flex-col gap-4 md:gap-12">
+    <div className="flex flex-col gap-4 md:gap-12 w-full">
       <div
         className="relative mt-[24px] h-60 lg:h-96 bg-cover bg-center w-full justify-center items-center"
         style={{ backgroundImage: `url(${solarpanelImage.src})` }}

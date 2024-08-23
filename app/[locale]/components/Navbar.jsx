@@ -53,11 +53,11 @@ const Navbar = () => {
             <Link href={translation("linkhome")} className=" whitespace-nowrap rounded-md">
             {translation('homepage')}
             </Link>
-            <div className="relative group">
-              <button className="flex flex-row items-center">
+            <div className="relative group items-center justify-center">
+              <button className="flex flex-row items-center mx-2">
               {translation('projects')} <FaCaretDown className="ml-1" />
               </button>
-              <div className="absolute pt-2 text-lg xl:w-48 w-30 bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
+              <div className="absolute pt-2 text-lg xl:w-full w-30 bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out items-center justify-start text-start">
                 <Link
                   href={translation("linkproject")}
                   className="block py-3  px-4  hover:bg-black/40"
@@ -73,10 +73,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="relative group">
-              <button className="flex flex-row items-center">
+              <button className="flex flex-row items-center mx-2">
               {translation('products')} <FaCaretDown className="ml-1" />
               </button>
-              <div className="absolute pt-2 w-48 text-lg bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
+              <div className="absolute pt-2 w-full text-lg bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out  items-center justify-start text-start">
                 <Link
                   href={translation("linkproduct")}
                   className="block py-5 px-4  hover:bg-black/40"
@@ -92,10 +92,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="relative group">
-              <button className="flex flex-row items-center">
+              <button className="flex flex-row items-center mx-2">
               {translation('certificate')} <FaCaretDown className="ml-1" />
               </button>
-              <div className="absolute pt-2 w-48 text-lg bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out">
+              <div className="absolute pt-2 w-full text-lg bg-black/20 rounded-md shadow-lg z-10 opacity-0 group-hover:opacity-100 hidden group-hover:block transition-all duration-300 ease-in-out  items-center justify-start text-start">
                 <Link
                   href={translation("linkcertificate")}
                   className="block py-2 px-3 hover:bg-black/40"

@@ -40,7 +40,7 @@ const Panel = ({images}) => {
       <button className="p-1 hidden lg:flex" onClick={scrollPrev} type="button">
         <BsChevronLeft size={35} color="white"/>
       </button>
-      <div className=" flex flex-col justify-center items-center w-auto h-full mt-10 mx-4 gap-12 text-white z-10">
+      <div className=" flex flex-col justify-center items-center w-3/5 h-full mt-10 mx-4 gap-12 text-white z-10">
         <div className="text-center z-10">
           <p className="text-xs lg:text-base 2xl:text-lg mb-3">{translation("text")}</p>
           <text className="text-lg lg:text-2xl 2xl:text-3xl font-semibold">

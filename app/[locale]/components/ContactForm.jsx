@@ -31,9 +31,10 @@ export default function ContactForm() {
 
   return (
    <div className="flex items-center justify-center w-full">
-     <div className="flex flex-col w-11/12 lg:w-3/5 bg-slate-800">
-     <form onSubmit={handleSubmit} className="flex flex-col w-full p-10 gap-4">
-      <div>
+     <div className="flex flex-col bg-slate-800 rounded-lg py-8 text-white items-center justify-center w-full sm:w-3/5 lg:w-11/12">
+     <h3 className="text-[25px] font-semibold text-white">Formu Doldurun</h3>
+     <form onSubmit={handleSubmit} className="flex flex-col p-10 gap-4 w-11/12 sm:w-4/5 text-start items-center">
+      <div className="flex flex-col w-full">
         <label htmlFor="name">Ad:</label>
         <input
           type="text"
@@ -41,11 +42,11 @@ export default function ContactForm() {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full p-2 border border-gray-300 rounded text-black"
           required
         />
       </div>
-      <div>
+      <div className="flex flex-col w-full">
         <label htmlFor="surname">Soyad:</label>
         <input
           type="text"
@@ -53,11 +54,11 @@ export default function ContactForm() {
           name="surname"
           value={formData.surname}
           onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full p-2 border border-gray-300 rounded text-black"
           required
         />
       </div>
-      <div>
+      <div className="flex flex-col w-full">
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -65,11 +66,11 @@ export default function ContactForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full p-2 border border-gray-300 rounded text-black"
           required
         />
       </div>
-      <div>
+      <div className="flex flex-col w-full">
         <label htmlFor="phone">Telefon:</label>
         <input
           type="tel"
@@ -77,21 +78,21 @@ export default function ContactForm() {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full p-2 border border-gray-300 rounded text-black"
         />
       </div>
-      <div>
+      <div className="flex flex-col w-full">
         <label htmlFor="message">Mesajınız:</label>
         <textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full p-2 border border-gray-300 rounded text-black"
           required
         />
       </div>
-      <button type="submit" className="px-4 py-2 w-[200px] text-white bg-blue-500 rounded">
+      <button type="submit" className="px-4 py-2 w-[200px] text-white bg-blue-500 rounded mt-5">
         Gönder
       </button>
     </form>
