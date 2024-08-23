@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="bg-neutral-900 text-white mt-12 lg:mt-20">
       <div className="container mx-[5px] sm:mx-auto px-6 md:px-12 lg:px-18 flex flex-col items-center justify-center gap-[24px]">
         <div className="flex flex-col justify-around items-center text-center xl:flex-row xl:gap-16 w-full py-4">
-          <div className="flex flex-col lg:flex-row lg:gap-20 ">
+          <div className="flex flex-col lg:flex-row lg:gap-20 items-center ">
             <div className=" w-auto h-auto py-[10px] lg:py-[16px] mt-2">
               <text className="text-xl font-semibold text-center lg:text-xl">
                 {translation("social")}
@@ -33,10 +33,12 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex w-28 sm:w-32 lg:w-40 2xl:w-48">
+            <div className="flex w-28 sm:w-32 lg:w-52 2xl:w-full h-full">
               <Image
                 src={logo}
                 alt="logo"
+                width={logo.width}
+                height={logo.height}
               />
             </div>
           </div>

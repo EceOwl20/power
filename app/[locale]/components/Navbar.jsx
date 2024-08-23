@@ -41,18 +41,17 @@ const Navbar = () => {
         {/* Desktop Navbar */}
         <div className="relative hidden lg:flex h-28 items-center justify-between xl:px-2 2xl:px-8 mx-4 text-black">
           <div className="w-15 sm:w-20 md:w-28 lg:w-36 xl:w-48 2xl:w-60 h-auto">
-            <Image
+           <Link href={translation("linkhome")}>
+           <Image
               src={navbarlogo}
               alt="logo"
               width={navbarlogo.width}
               height={navbarlogo.height}
              
-            />
+            /></Link>
           </div>
           <div className="flex gap-[18px] xl:gap-10 2xl:gap-18 justify-center items-end text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold text-white mx-2 z-99">
-            <Link href={translation("linkhome")} className=" whitespace-nowrap rounded-md">
-            {translation('homepage')}
-            </Link>
+            
             <div className="relative group items-center justify-center">
               <button className="flex flex-row items-center mx-2">
               {translation('projects')} <FaCaretDown className="ml-1" />
