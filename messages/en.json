@@ -115,5 +115,21 @@
       "mission":"Mission",
       "missionText":"To expand the use of green energy in the world and leave a cleaner world to our children.",
       "text":"Our staff guarantees the sustainability of their projects using their knowledge and the latest technology. We provide services with solar energy systems, monitoring, tracking and analysis systems and project-specific power electronic equipment designed for On Power Energy Group."
+    },
+    "Icons": {
+      "header":"The Right Choice for Your Success",
+      "iconElectric":"Electric Purchase Guarantee",
+      "iconFinancing":"Financing",
+      "iconPanel":"Installation",
+      "iconControl": "15 Years Control"
+    },
+    "Form": {
+      "header": "Fill Out the Form",
+      "name": "Name",
+      "surname": "Surname",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Your Message",
+      "submit":"Submit"
     }
 }
