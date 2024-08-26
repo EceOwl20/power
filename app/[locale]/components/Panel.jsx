@@ -36,16 +36,17 @@ const Panel = ({images}) => {
       ))}
     </div>
     <div className="bg-black/30 absolute inset-0 z-[1]"></div>
-    <div className="absolute inset-0 flex items-center justify-between p-6">
+    <div className="absolute inset-0 flex items-center justify-between text-center p-6">
       <button className="p-1 hidden lg:flex" onClick={scrollPrev} type="button">
         <BsChevronLeft size={35} color="white"/>
       </button>
-      <div className=" flex flex-col justify-center items-center w-3/5 h-full mt-10 mx-4 gap-12 text-white z-10">
-        <div className="text-center z-10">
-          <p className="text-xs lg:text-base 2xl:text-lg mb-3">{translation("text")}</p>
+      <div className=" flex flex-col justify-center items-center text-center w-full h-full mt-10 mx-4 gap-12 text-white z-10">
+        <div className="text-center z-10 w-3/5">
+          
           <text className="text-lg lg:text-2xl 2xl:text-3xl font-semibold">
             {translation("header")}
           </text>
+          <p className="text-xs lg:text-base 2xl:text-lg mb-3">{translation("text")}</p>
         </div>
         <button
           id="about"

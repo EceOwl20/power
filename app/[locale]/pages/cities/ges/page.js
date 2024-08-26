@@ -34,6 +34,9 @@ import yaylıatlı2 from "@/public/assets/images/yaylıatlı2.jpg";
 import yaylıatlı3 from "@/public/assets/images/yaylıatlı3.jpg";
 import yaylıatlı4 from "@/public/assets/images/yaylıatlı4.jpg";
 
+import aktas1 from "@/public/assets/images/aktas1.jpg";
+import aktas2 from "@/public/assets/images/aktas2.jpg";
+import aktas3 from "@/public/assets/images/aktas3.jpg";
 import aktas4 from "@/public/assets/images/aktas4.jpg";
 
 import derekoy from "@/public/assets/images/derekoy1.jpg";
@@ -92,9 +95,9 @@ const imagesYava = [
   ];
 
   const imagesAktas = [
-    aktas4,
-    aktas4,
-    aktas4,
+    aktas1,
+    aktas2,
+    aktas3,
     aktas4
   ];
 
