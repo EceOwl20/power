@@ -33,7 +33,7 @@ export default function ContactForm() {
    <div className="flex items-center justify-center w-full">
      <div className="flex flex-col bg-slate-800 rounded-lg py-8 text-white items-center justify-center w-full sm:w-3/5 lg:w-11/12">
      <h3 className="text-[25px] font-semibold text-white">Formu Doldurun</h3>
-     <form  className="flex flex-col p-10 gap-4 w-11/12 sm:w-4/5 text-start items-center">
+     <form onSubmit={handleSubmit}  className="flex flex-col p-10 gap-4 w-11/12 sm:w-4/5 text-start items-center">
       <div className="flex flex-col w-full">
         <label htmlFor="name">Ad:</label>
         <input
@@ -41,7 +41,7 @@ export default function ContactForm() {
           id="name"
           name="name"
           value={formData.name}
-          // onChange={handleChange}
+          onChange={handleChange}
           className="w-full p-2 border border-gray-300 rounded text-black"
           required
         />
@@ -53,7 +53,7 @@ export default function ContactForm() {
           id="surname"
           name="surname"
           value={formData.surname}
-          // onChange={handleChange}
+          onChange={handleChange}
           className="w-full p-2 border border-gray-300 rounded text-black"
           required
         />
@@ -65,7 +65,7 @@ export default function ContactForm() {
           id="email"
           name="email"
           value={formData.email}
-          // onChange={handleChange}
+          onChange={handleChange}
           className="w-full p-2 border border-gray-300 rounded text-black"
           required
         />
@@ -77,7 +77,7 @@ export default function ContactForm() {
           id="phone"
           name="phone"
           value={formData.phone}
-          // onChange={handleChange}
+          onChange={handleChange}
           className="w-full p-2 border border-gray-300 rounded text-black"
         />
       </div>
@@ -87,7 +87,7 @@ export default function ContactForm() {
           id="message"
           name="message"
           value={formData.message}
-          // onChange={handleChange}
+          onChange={handleChange}
           className="w-full p-2 border border-gray-300 rounded text-black"
           required
         />
