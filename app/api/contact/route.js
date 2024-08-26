@@ -1,34 +1,32 @@
-// import nodemailer from 'nodemailer';
+// app/api/contact/route.js
+import nodemailer from 'nodemailer';
 
-// export async function POST(request) {
-//   const { name, surname, email, phone, message } = await request.json();
+// Nodemailer konfigürasyonu
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: parseInt(process.env.SMTP_PORT, 10),
+  secure: true, // Genellikle port 465 için true
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
-//   // Nodemailer yapılandırması
-//   const transporter = nodemailer.createTransport({
-//     service: 'gmail', // Farklı bir e-posta servisi kullanıyorsanız burayı güncelleyin
-//     auth: {
-//       user: process.env.EMAIL_USER, // .env dosyasına email bilgilerinizi ekleyin
-//       pass: process.env.EMAIL_PASS, // .env dosyasına email şifrenizi ekleyin
-//     },
-//   });
+// POST isteği işlemi
+export async function POST(req) {
+  const { name, surname, email, phone, message } = await req.json();
+  
+  const mailOptions = {
+    from: email, // Formdan gelen email adresi
+    to: 'info@onpowergroup.com', // Hedef e-posta adresi
+    subject: 'İletişim Formu Mesajı',
+    text: `Ad: ${name}\nSoyad: ${surname}\nEmail: ${email}\nTelefon: ${phone}\nMesaj: ${message}`,
+  };
 
-//   const mailOptions = {
-//     from: email,
-//     to: 'hedefemail@adresiniz.com', // Hedef e-posta adresini buraya girin
-//     subject: `Yeni Mesaj - ${name} ${surname}`,
-//     text: `
-//       İsim: ${name} ${surname}
-//       Email: ${email}
-//       Telefon: ${phone}
-//       Mesaj: ${message}
-//     `,
-//   };
-
-//   try {
-//     await transporter.sendMail(mailOptions);
-//     return new Response(JSON.stringify({ success: true }), { status: 200 });
-//   } catch (error) {
-//     console.error(error);
-//     return new Response(JSON.stringify({ success: false }), { status: 500 });
-//   }
-// }
+  try {
+    await transporter.sendMail(mailOptions);
+    return new Response(JSON.stringify({ message: 'Mesajınız başarıyla gönderildi!' }), { status: 200 });
+  } catch (error) {
+    return new Response(JSON.stringify({ error: 'Mesaj gönderilirken bir hata oluştu.' }), { status: 500 });
+  }
+}
