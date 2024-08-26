@@ -61,7 +61,7 @@ const Footer = () => {
                 
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/"
+                  href={translation("kvkkLink")}
                 >
                   {translation("kvkk")}
                 </Link>

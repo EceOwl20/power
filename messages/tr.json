@@ -51,7 +51,8 @@
       "stations":"Santraller",
       "generators":"Jeneratör",
       "ups":"UPS",
-      "linkblog":"tr/pages/blog"
+      "linkblog":"tr/pages/blog",
+      "kvkkLink":"tr/pages/kvkk"
     },
 
     "About":{

@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function KvkkComp() {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 lg:px-6 items-center justify-center">
-      <div className="lg:max-w-4xl lg:mx-auto bg-white lg:p-8 shadow-lg rounded-lg w-full max-w-none p-4">
+    <div className="min-h-screen bg-gray-100 py-12 lg:px-6 items-center justify-center ">
+      <div className="lg:max-w-4xl lg:mx-auto bg-white lg:p-8 shadow-lg rounded-lg w-full max-w-full p-4">
         <h1 className="text-3xl font-bold text-center mb-6">Enerji üretimi ve kurulumu Şirketleri KVKK Aydınlatma Metni</h1>
         <h2 className="text-2xl font-normal mb-4">Kişisel Verilerin Korunması ve İşlenmesi Hakkında Aydınlatma Metni</h2>
         
