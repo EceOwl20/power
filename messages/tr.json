@@ -23,7 +23,9 @@
       "linkproduct":"/tr/pages/products",
       "linkcertificate":"/tr/pages/certificate",
       "linkabout":"/tr/pages/about",
-      "linkups":"/tr/pages/products#ups"
+      "linkups":"/tr/pages/products#ups",
+      "kvkk":"KVKK",
+      "kvkkLink":"/pages/kvkk"
     },
 
     "Panel":{
