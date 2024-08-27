@@ -48,12 +48,12 @@ const Panel = ({images}) => {
           </text>
           <p className="text-xs lg:text-base 2xl:text-lg mb-3">{translation("text")}</p>
         </div>
+        
+        <Link href={translation("href")} target="_blank" rel="noopener noreferrer">
         <button
           id="about"
-          className=" bg-amber-400 rounded-full px-6 py-3 lg:px-8  text-sm z-10 lg:text-base"
-        ><Link href="/pages/values"> {translation("button")}</Link>
-         
-        </button>
+          className=" bg-amber-400 rounded-full px-6 py-3 lg:px-8  text-sm z-10 lg:text-base">{translation("button")}
+        </button></Link>
       </div> 
       <button onClick={scrollNext} className="p-1 hidden lg:flex">
         <BsChevronRight size={35} color="white"/>
