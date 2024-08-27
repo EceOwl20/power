@@ -1,5 +1,6 @@
  "use client"
 import React, { useState } from 'react';
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -29,13 +30,15 @@ export default function ContactForm() {
     }
   };
 
+  const t = useTranslations("Form");
+
   return (
    <div className="flex items-center justify-center w-full">
      <div className="flex flex-col bg-slate-800 rounded-lg py-8 text-white items-center justify-center w-full sm:w-3/5 lg:w-11/12">
-     <h3 className="text-[25px] font-semibold text-white">Formu Doldurun</h3>
+     <h3 className="text-[25px] font-semibold text-white">{t("header")}</h3>
      <form onSubmit={handleSubmit}  className="flex flex-col p-10 gap-4 w-11/12 sm:w-4/5 text-start items-center">
       <div className="flex flex-col w-full">
-        <label htmlFor="name">Ad:</label>
+        <label htmlFor="name">{t("name")}</label>
         <input
           type="text"
           id="name"
@@ -47,7 +50,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex flex-col w-full">
-        <label htmlFor="surname">Soyad:</label>
+        <label htmlFor="surname">{t("surname")}</label>
         <input
           type="text"
           id="surname"
@@ -59,7 +62,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex flex-col w-full">
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">{t("email")}</label>
         <input
           type="email"
           id="email"
@@ -71,7 +74,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex flex-col w-full">
-        <label htmlFor="phone">Telefon:</label>
+        <label htmlFor="phone">{t("phone")}</label>
         <input
           type="tel"
           id="phone"
@@ -82,7 +85,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex flex-col w-full">
-        <label htmlFor="message">Mesajınız:</label>
+        <label htmlFor="message">{t("message")}</label>
         <textarea
           id="message"
           name="message"
@@ -93,7 +96,7 @@ export default function ContactForm() {
         />
       </div>
       <button className="px-4 py-2 w-[200px] text-white bg-blue-500 rounded mt-5">
-        Gönder
+        {t("submit")}
       </button>
     </form>
      </div>

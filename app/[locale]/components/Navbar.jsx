@@ -178,14 +178,14 @@ const Navbar = () => {
               </button>
               <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300 ease-in-out w-full bg-white rounded-md shadow-lg">
                 <Link
-                  href="/"
+                  href={translation("linkproduct")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
                   {translation('generators')}
                 </Link>
                 <Link
-                  href={translation("linkproduct")}
+                  href={translation("linkups")}
                   onClick={toggleSidebar}
                   className="block py-3 px-4 text-black hover:bg-gray-300"
                 >
@@ -225,6 +225,13 @@ const Navbar = () => {
             >
               {translation('contact')}
             </a>
+            <Link
+              href={translation("kvkkLink")}
+              onClick={toggleSidebar}
+              className=" px-3 py-2 rounded-md text-lg my-2"
+            >
+              {translation('kvkk')}
+            </Link>
             <div className="justify-center items-center text-black text-center cursor-pointer">
             <LangSwitcher />
           </div>

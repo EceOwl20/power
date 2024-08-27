@@ -5,11 +5,7 @@ import { useRouter, usePathname } from "@/navigation";
 import React, { useState } from "react";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 
-export default function LocaleSwitcherSelect({
-  children,
-  defaultValue,
-  label,
-}) {
+export default function LocaleSwitcherSelect({ children, defaultValue, label }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const router = useRouter();
