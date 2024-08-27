@@ -24,9 +24,9 @@ export default function ContactForm() {
     });
 
     if (res.ok) {
-      alert('Mesajınız gönderildi!');
+      alert(`${t("popupMessage")}`);
     } else {
-      alert('Bir hata oluştu, lütfen tekrar deneyin.');
+      alert(`${t("popupError")}`);
     }
   };
 

@@ -1,6 +1,6 @@
 {   "LocaleSwitcher": {
     "label": "Dili Değiştir",
-    "locale": "{locale, select, en {EN} tr {TR} other {Bilinmeyen}}"
+    "locale": "{locale, select, en {EN} tr {TR} ua {UA} other {Bilinmeyen}}"
     
    
   },
@@ -25,7 +25,8 @@
       "linkabout":"/tr/pages/about",
       "linkups":"/tr/pages/products#ups",
       "kvkk":"KVKK",
-      "kvkkLink":"/pages/kvkk"
+      "kvkkLink":"/pages/kvkk",
+      "contactlink":"/tr/#contact"
     },
 
     "Panel":{
@@ -63,7 +64,8 @@
       "header":"Onpowergroup Hakkında",
       "title":"En iyi Kalitede 10 Yıllık Üretim Mükemmelliği",
       "text":"2015 yılından bugüne 160 Mw GES kurulumu tecrübesi, Yatırm Danışmanlığı ve Teşvik Danışmanlığı konularında 30 yıllık tecrübe birlikteliğinden oluşmuş bir gruptur. Güçlü kadrosu, yüksek bilgi ve teknoloji kullanarak yaptığı projelerin sürdürebilir olmasını garanti eder.",
-      "button":"Daha fazlası..."
+      "button":"Daha fazlası...",
+      "person":"ŞİRKET SAHİBİ - DOKUZ EYLÜL ÜNİVERSİTESİ"
     
     },
     
@@ -141,6 +143,11 @@
       "email":"E-posta",
       "phone":"Telefon",
       "message":"Mesajınız",
-      "submit":"Gönder"
-    }
+      "submit":"Gönder",
+      "popupMessage":"Mesajınız gönderildi!",
+      "popupError":"Bir hata oluştu, lütfen tekrar deneyin."
+    },
+    "Partner":{
+  "partners":"Ortaklar"
+}
   }

@@ -105,7 +105,7 @@ const Navbar = () => {
               </div>
             </div>
             <Link href={translation("linkabout")}> {translation('about')}</Link>
-            <Link href="/#contact"> {translation('contact')}</Link>
+            <Link href={translation("contactlink")}> {translation('contact')}</Link>
           </div>
           <div className=" justify-center items-center text-black text-base  lg:text-lg xl:text-xl text-center cursor-pointer ">
             <LangSwitcher />
@@ -219,7 +219,7 @@ const Navbar = () => {
             </Link>
 
             <a
-              href="/#contact"
+              href={translation("contactlink")}
               onClick={toggleSidebar}
               className=" px-3 py-2 rounded-md text-lg mt-4"
             >
