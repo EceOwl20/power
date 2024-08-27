@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "@/public/assets/images/logo.png";
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { useTranslations } from "next-intl";
+import DgtlLogo from "../components/DgtlLogo";
 
 const Footer = () => {
   const translation = useTranslations("Footer");
@@ -54,7 +55,7 @@ const Footer = () => {
               <ul className=" flex flex-row gap-2 lg:gap-20 mt-[6px] lg:mt-[12px]">
                 <Link
                   className="hover:text-slate-500 text-xs font-light lg:text-base xl:text-lg"
-                  href="/#about"
+                  href={translation("linkabout")}
                 >
                   {translation("about")}
                 </Link>
@@ -97,11 +98,17 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="mt-7 bg-black">
+      {/* <div className="mt-7 bg-black">
         <p className="regular-14 text-xs text-center text-gray-500">
           Powered by DGTLFACE | All rights reserved
         </p>
-      </div>
+      </div> */}
+      <div className="flex h-auto justify-center  items-center bg-black p-1 mt-1 gap-1">
+      <span className="text-[13px] text-white font-normal leading-normal tracking-[0.8px] font-sans pt-[4px]">Powered by </span>
+      <Link href="https://dgtlface.com/tr"  rel="norefferer nofollower" target="_blank" className="flex items-center justify-center">
+      <DgtlLogo className="flex items-center justify-center" width={80} height={20}/>
+        </Link>
+        </div>
     </footer>
   );
 };

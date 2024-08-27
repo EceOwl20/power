@@ -50,7 +50,8 @@
   "generators":"Generator",
   "ups":"UPS",
   "linkblog":"en/pages/blog",
-  "kvkkLink":"tr/pages/kvkk"
+  "kvkkLink":"/pages/kvkk",
+  "linkabout":"/en/pages/about"
 },
 
 "About":{
