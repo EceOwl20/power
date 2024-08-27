@@ -1,7 +1,7 @@
 {  
   "LocaleSwitcher": {
   "label": "Change language",
-  "locale": "{locale, select, de {DE} en {EN} tr {TR} ru {RU} other {Unknown}}"
+  "locale": "{locale, select, en {EN} tr {TR} ua {UA} other {Unknown}}"
 },
 
 "Navbar":{
@@ -24,7 +24,8 @@
   "linkcertificate":"/en/pages/certificate",
   "linkabout":"/en/pages/about",
   "kvkk":"KVKK",
-  "kvkkLink":"/pages/kvkk"
+  "kvkkLink":"/pages/kvkk",
+  "contactlink":"/en/#contact"
 },
 
 "Panel":{
@@ -61,7 +62,8 @@
   "header":"About Onpowergroup",
   "title":"10 Years of Manufacturing Excellence in Best Quality.",
   "text":"It is a group formed with 30 years of experience in 160 Mw SPP installation experience, Investment Consultancy, and Incentive Consultancy since 2015. It guarantees the sustainability of its projects using its strong staff, high knowledge, and technology.",
-  "button":"More..."
+  "button":"More...",
+  "person":"COMPANY OWNER - DOKUZ EYLÜL UNIVERSITY"
 },
 "Station":{
   "header":"SOLAR POWER PLANTS",
@@ -134,6 +136,8 @@
       "email": "Email",
       "phone": "Phone",
       "message": "Your Message",
-      "submit":"Submit"
+      "submit":"Submit",
+      "popupMessage":"Your message has been sent!",
+      "popupError":"An error occurred, please try again." 
     }
 }

@@ -37,7 +37,7 @@ const Panel = ({images}) => {
     </div>
     <div className="bg-black/30 absolute inset-0 z-[1]"></div>
     <div className="absolute inset-0 flex items-center justify-between text-center p-6">
-      <button className="p-1 hidden lg:flex" onClick={scrollPrev} type="button">
+      <button className="p-2 hidden lg:flex" onClick={scrollPrev} type="button">
         <BsChevronLeft size={35} color="white"/>
       </button>
       <div className=" flex flex-col justify-center items-center text-center w-full h-full mt-10 mx-4 gap-12 text-white z-10">
@@ -57,7 +57,7 @@ const Panel = ({images}) => {
 
 
       </div> 
-      <button onClick={scrollNext} className="p-1 hidden lg:flex">
+      <button onClick={scrollNext} className="p-2 hidden lg:flex">
         <BsChevronRight size={35} color="white"/>
       </button>
     </div>

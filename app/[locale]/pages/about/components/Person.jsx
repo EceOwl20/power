@@ -34,13 +34,13 @@ const Person = () => {
         <div className='absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 hover:bg-black/70 z-[1] duration-500 transition-opacity'>
         <div className='flex flex-col gap-[20px] w-2/3 items-center justify-center'>
         <span className='text-[17px] lg:text-[20px] font-serif z-[50] uppercase'>TAMER ONSOY</span>
-        <text className='text-[13px] lg:text-[15px] z-[50]'>ŞİRKET SAHİBİ - DOKUZ EYLÜL ÜNİVERSİTESİ</text>
+        <text className='text-[13px] lg:text-[15px] z-[50]'>{translation('person')}</text>
         </div>
         </div>
       </div>
       <div className='flex flex-col  gap-[5px] items-center lg:items-end text-center w-full justify-center text-black'>
       <span className='text-[17px] lg:text-[20px] font-serif z-[50] uppercase'>TAMER ONSOY</span>
-      <text className='text-[13px] lg:text-[15px] z-[50]'>ŞİRKET SAHİBİ - DOKUZ EYLÜL ÜNİVERSİTESİ</text>
+      <text className='text-[13px] lg:text-[15px] z-[50]'>{translation('person')}</text>
       </div>
       </div>
     </div>

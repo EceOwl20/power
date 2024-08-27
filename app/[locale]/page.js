@@ -9,9 +9,11 @@ import panelImage1 from "@/public/assets/images/panel1.jpeg";
 import panelImage2 from "@/public/assets/images/panel2.jpeg";
 import panelImage4 from "@/public/assets/images/panel4.jpeg";
 import panelImage from "@/public/assets/images/onpower1.webp";
+import houseImage from "@/public/assets/images/houseImg.jpg";
+import houseImage2 from "@/public/assets/images/houseImg2.jpg";
 import IconSection from "./components/IconSection";
 
-const imagesCarousel = [panelImage, panelImage2, panelImage4];
+const imagesCarousel = [panelImage, panelImage2, panelImage4,houseImage,houseImage2];
 
 export default function Home() {
 
