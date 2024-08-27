@@ -7,7 +7,7 @@ const Person = () => {
   const translation = useTranslations('About');
 
   return (
-    <div className="flex flex-col lg:flex-row w-full lg:w-4/5 justify-around h-[700px]">
+    <div className="flex flex-col lg:flex-row w-full lg:w-4/5 justify-around h-screen">
 
 <div className="flex flex-col items-center lg:items-end justify-center w-full">
       <div className="flex flex-col justify-center items-center lg:items-start  text-center lg:text-start h-full w-4/5 md:w-3/5 lg:w-11/12 xl:w-full mx-4 lg:mx-0 gap-3 lg:gap-4 mt-[30px] lg:mt-[100px]">

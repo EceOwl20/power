@@ -103,7 +103,7 @@ const Footer = () => {
           Powered by DGTLFACE | All rights reserved
         </p>
       </div> */}
-      <div className="flex h-auto justify-center  items-center bg-black p-1 mt-1 gap-1">
+      <div className="flex h-auto justify-center  items-center bg-black p-3 mt-3 gap-1">
       <span className="text-[13px] text-white font-normal leading-normal tracking-[0.8px] font-sans pt-[4px]">Powered by </span>
       <Link href="https://dgtlface.com/tr"  rel="norefferer nofollower" target="_blank" className="flex items-center justify-center">
       <DgtlLogo className="flex items-center justify-center" width={80} height={20}/>
