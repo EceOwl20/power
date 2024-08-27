@@ -219,7 +219,7 @@ const Navbar = () => {
             </Link>
 
             <a
-              href="/#contact"
+              href={translation("contactlink")}
               onClick={toggleSidebar}
               className=" px-3 py-2 rounded-md text-lg mt-4"
             >

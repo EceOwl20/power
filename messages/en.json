@@ -139,5 +139,8 @@
       "submit":"Submit",
       "popupMessage":"Your message has been sent!",
       "popupError":"An error occurred, please try again." 
-    }
+    },
+    "Partner":{
+  "partners":"Partners"
+}
 }

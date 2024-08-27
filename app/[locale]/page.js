@@ -23,7 +23,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-[1px]">
       <About />
       <Form/>
-      </div>
+      </div> 
       <IconSection/>
       <Station />
       <Contact />
