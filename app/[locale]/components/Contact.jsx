@@ -23,6 +23,7 @@ const Contact = () => {
           <h3 className="text-[20px] lg:text-[24px]">{translation("subHeader2")}</h3>
           <text className="text-[16px] leading-normal text-gray-600 font-light"> Novokonstantunisvska 15/15 Kiev / Ukraine</text>
         <text className="">{translation('phone')}/GSM <span className="font-bold text-[18px] lg:text-[21px] text-gray-600 ">+380 63 225 0893</span></text>
+        <text className="font-bold text-[18px] lg:text-[21px] text-gray-600 ">{translation('mail')}</text>
         </div>
         </div>
         <a href="mailto:tamer.onsoy@onpowergroup.com">
