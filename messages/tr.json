@@ -76,10 +76,11 @@
 
     "Contact":{
       "header":"Bize Ulaşın",
-      "phone":"+90 242 322 60 00",
-      "phone2":"+90 532 417 52 16",
+      "phone":"Telefon",
       "mail":"info@onpowergroup.com",
-      "button":"Hemen Teklif Al"
+      "button":"Hemen Teklif Al",
+      "subHeader":"Türkiye İletişim",
+      "subHeader2":"Ukrayna İletişim"
     },
 
     "City":{

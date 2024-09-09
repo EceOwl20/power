@@ -71,10 +71,11 @@
 },
 "Contact":{
   "header":"Contact Us",
-  "phone":"+90 242 322 60 00",
-  "phone2":"+90 532 417 52 16",
+  "phone":"Phone",
   "mail":"info@onpowergroup.com",
-  "button":"Get an Offer Now"
+  "button":"Get an Offer Now",
+  "subHeader":"Türkiye Contact",
+  "subHeader2":"Ukrainian Contact"
 },
 
 "City":{
