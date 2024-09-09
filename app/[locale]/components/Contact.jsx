@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-col gap-[5px] text-[18px] lg:text-[20px] w-full lg:w-1/3">
           <h3 className="text-[20px] lg:text-[24px]">{translation("subHeader2")}</h3>
-          <text className="text-[16px] leading-normal text-gray-600 font-light"> Novokonstantunisvska 15/15 Kiev / Ukraine</text>
+          <text className="text-[16px] leading-normal text-gray-600 font-light"> Novokonstantunisvska 15/15 Kiev/Ukraine</text>
         <text className="">{translation('phone')}/GSM <span className="font-bold text-[18px] lg:text-[21px] text-gray-600 ">+380 63 225 0893</span></text>
         <text className="font-bold text-[18px] lg:text-[21px] text-gray-600 ">{translation('mail')}</text>
         </div>
