@@ -13,7 +13,7 @@ import houseImage from "@/public/assets/images/houseImg.jpg";
 import houseImage2 from "@/public/assets/images/houseImg2.jpg";
 import IconSection from "./components/IconSection";
 
-const imagesCarousel = [panelImage, panelImage2, panelImage4,houseImage,houseImage2];
+const imagesCarousel = [panelImage, panelImage2, panelImage4];
 
 export default function Home() {
 

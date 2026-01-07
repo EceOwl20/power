@@ -16,6 +16,9 @@ export async function getServerSideProps(context) {
 export const metadata = {
   title: "Onpower Group",
   description: "Onpower group website, Antalya",
+    icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children, language }) {
